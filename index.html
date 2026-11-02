@@ -17,7 +17,6 @@
         </div>
     </header>
 
-    <!-- ЭКРАН 1: КАТАЛОГ -->
     <div id="view-catalog" class="view active-view">
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Поиск проверенных скриптов..." class="search-input">
@@ -30,19 +29,13 @@
             <span class="tag" data-category="Бинды">Бинды</span>
         </div>
 
-        <main class="script-list" id="script-list">
-            <!-- Карточки -->
-        </main>
+        <main class="script-list" id="script-list"></main>
     </div>
 
-    <!-- ЭКРАН 2: ИЗБРАННОЕ -->
     <div id="view-favorites" class="view">
-        <main class="script-list" id="favorites-list">
-            <!-- Избранные карточки -->
-        </main>
+        <main class="script-list" id="favorites-list"></main>
     </div>
 
-    <!-- ЭКРАН 3: НАСТРОЙКИ -->
     <div id="view-settings" class="view">
         <div class="settings-card">
             <h2>Настройки</h2>
@@ -51,7 +44,23 @@
         </div>
     </div>
 
-    <!-- НИЖНЯЯ НАВИГАЦИЯ -->
+    <!-- МОДАЛЬНОЕ ОКНО СКРИПТА -->
+    <div id="script-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal">✖</button>
+            <div class="modal-image" id="modal-image"></div>
+            <div class="modal-body">
+                <h2 id="modal-title">Название</h2>
+                <p class="modal-author">Автор: <span id="modal-author">Автор</span></p>
+                <p id="modal-description" class="modal-description">Описание...</p>
+                <div class="modal-footer">
+                    <span class="loader-type" id="modal-loader">MonetLoader</span>
+                    <button class="install-btn" id="modal-install-btn">Установить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav class="bottom-nav">
         <a href="#" class="nav-item active" data-target="view-catalog">
             <span class="nav-icon">📁</span>
