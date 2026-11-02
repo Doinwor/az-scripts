@@ -5,6 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let gameFolderId = localStorage.getItem('gameFolderId');
 
+    // Функция для красивых уведомлений
+    function showToast(message, type = 'success') {
+        const container = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        toast.className = `toast ${type}`;
+        toast.innerText = message;
+        container.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.style.animation = 'toastIn 0.3s reverse';
+            setTimeout(() => toast.remove(), 300);
+        }, 3000);
+    }
+
     fetch('scripts.json')
         .then(response => response.json())
         .then(data => {
@@ -23,12 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (result && result.folder && result.folder.id) {
                 localStorage.setItem('gameFolderId', result.folder.id);
                 gameFolderId = result.folder.id;
-                alert('Папка игры успешно выбрана!');
+                showToast('Папка игры успешно выбрана!', 'success');
                 return true;
             }
         } catch (e) {
             console.error('Ошибка выбора папки:', e);
-            alert('Не удалось выбрать папку.');
+            showToast('Не удалось выбрать папку.', 'error');
         }
         return false;
     }
@@ -70,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!gameFolderId && window.Capacitor) {
                     const selected = await selectFolder();
                     if (!selected) {
-                        alert('Без выбора папки monetloader установка невозможна!');
+                        showToast('Без выбора папки monetloader установка невозможна!', 'error');
                         return;
                     }
                 }
@@ -84,8 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     const response = await fetch(url);
                     const rawBlob = await response.blob();
-                    
-                    // Указываем, что это скрипт Lua
                     const blob = new Blob([rawBlob], { type: 'application/x-lua' });
                     
                     if (window.Capacitor) {
@@ -96,36 +108,34 @@ document.addEventListener('DOMContentLoaded', () => {
                         reader.onloadend = async () => {
                             try {
                                 const base64data = reader.result.split(',')[1];
-                                
-                                // Сохраняем с четким указанием mimeType
                                 await ScopedStorage.writeFile({
                                     folder: { id: gameFolderId }, 
                                     path: `${name}.lua`,
                                     data: base64data,
                                     encoding: 'base64',
-                                    mimeType: 'application/x-lua' // Принудительно указываем формат
+                                    mimeType: 'application/octet-stream'
                                 });
-                                alert(`Файл ${name}.lua успешно установлен в игру!`);
+                                showToast(`Файл ${name}.lua успешно установлен!`, 'success');
                             } catch (err) {
                                 console.error('Ошибка записи файла:', err);
-                                alert('Ошибка записи. Убедитесь, что выбрана папка monetloader.');
+                                showToast('Ошибка записи. Выбрана ли папка monetloader?', 'error');
                             } finally {
                                 e.target.innerText = 'Установить';
                                 e.target.disabled = false;
                             }
                         };
                     } else {
-                        // Для браузера на компьютере
                         const a = document.createElement('a');
                         a.href = URL.createObjectURL(blob);
                         a.download = `${name}.lua`;
                         a.click();
+                        showToast(`Файл ${name}.lua скачан!`, 'success');
                         e.target.innerText = 'Установить';
                         e.target.disabled = false;
                     }
                 } catch (error) {
                     console.error('Ошибка сети:', error);
-                    alert('Ошибка скачивания. Проверь интернет.');
+                    showToast('Ошибка скачивания. Проверь интернет.', 'error');
                     e.target.innerText = 'Установить';
                     e.target.disabled = false;
                 }
