@@ -500,7 +500,8 @@
     "local_url": "./scripts/payday-notifier-napominanie-o-payday.lua",
     "color": "#38bdf8",
     "command": "/payday-n",
-    "image": "./images/payday-notifier-napominanie-o-payday.png"
+    "image": "./images/payday-notifier-napominanie-o-payday.png",
+    "hidden": true
   },
   {
     "id": "anti-kovsh",
