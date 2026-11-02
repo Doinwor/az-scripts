@@ -262,7 +262,8 @@
     "local_url": "./scripts/RodinaOptimizer.lua",
     "color": "#38bdf8",
     "command": "/RodinaOp",
-    "image": "./images/RodinaOptimizer.jpg"
+    "image": "./images/RodinaOptimizer.jpg",
+    "hidden": true
   },
   {
     "id": "giroskop",
