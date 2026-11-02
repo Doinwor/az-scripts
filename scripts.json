@@ -332,7 +332,8 @@
     "local_url": "./scripts/anti-lomka.lua",
     "color": "#38bdf8",
     "command": "/anti-lom",
-    "image": "./images/anti-lomka.png"
+    "image": "./images/anti-lomka.png",
+    "hidden": true
   },
   {
     "id": "familyhelper",
