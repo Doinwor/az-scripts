@@ -80,7 +80,8 @@
     "local_url": "./scripts/parovozov-multi-tools-v1-0-rodina-monetloader.lua",
     "color": "#38bdf8",
     "command": "/parovozo",
-    "image": "./images/parovozov-multi-tools-v1-0-rodina-monetloader.png"
+    "image": "./images/parovozov-multi-tools-v1-0-rodina-monetloader.png",
+    "hidden": true
   },
   {
     "id": "ukrmap",
