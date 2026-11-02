@@ -24,7 +24,8 @@
     "local_url": "./scripts/arizona-helper.lua",
     "color": "#38bdf8",
     "command": "/arizona-",
-    "image": "./images/arizona-helper.jpg"
+    "image": "./images/arizona-helper.jpg",
+    "hidden": true
   },
   {
     "id": "bot-na-lesopilku",
