@@ -178,7 +178,8 @@
     "local_url": "./scripts/autoflip-avtomaticheskiy-domkrat.lua",
     "color": "#38bdf8",
     "command": "/autoflip",
-    "image": "./images/autoflip-avtomaticheskiy-domkrat.png"
+    "image": "./images/autoflip-avtomaticheskiy-domkrat.png",
+    "hidden": true
   },
   {
     "id": "neo-player-names-by-porty-neomloader",
