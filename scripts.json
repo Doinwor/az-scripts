@@ -66,7 +66,8 @@
     "local_url": "./scripts/rhl2-0-helper-dlya-lovli.lua",
     "color": "#38bdf8",
     "command": "/rhl2-0-h",
-    "image": "./images/rhl2-0-helper-dlya-lovli.jpg"
+    "image": "./images/rhl2-0-helper-dlya-lovli.jpg",
+    "hidden": true
   },
   {
     "id": "parovozov-multi-tools-v1-0-rodina-monetloader",
