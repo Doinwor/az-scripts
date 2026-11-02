@@ -402,7 +402,8 @@
     "local_url": "./scripts/radius-lavki-rodina.lua",
     "color": "#38bdf8",
     "command": "/radius-l",
-    "image": "./images/radius-lavki-rodina.jpg"
+    "image": "./images/radius-lavki-rodina.jpg",
+    "hidden": true
   },
   {
     "id": "central-market-rodina",
