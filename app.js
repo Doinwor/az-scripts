@@ -3,10 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     let allScripts = [];
 
-    // Проверяем, выбрана ли уже папка игры (сохраняем в память телефона)
-    let gameFolderUri = localStorage.getItem('gameFolderUri');
+    // Восстанавливаем сохраненный ID папки
+    let gameFolderId = localStorage.getItem('gameFolderId');
 
-    // Загружаем базу данных
     fetch('scripts.json')
         .then(response => response.json())
         .then(data => {
@@ -18,20 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
             scriptList.innerHTML = '<p style="color: red; text-align: center;">Ошибка загрузки базы данных.</p>';
         });
 
-    // Функция выбора папки игры
     async function selectFolder() {
         try {
             const { ScopedStorage } = window.Capacitor.Plugins;
             const result = await ScopedStorage.pickFolder();
-            if (result && result.folder) {
-                localStorage.setItem('gameFolderUri', result.folder.id);
-                gameFolderUri = result.folder.id;
+            if (result && result.folder && result.folder.id) {
+                localStorage.setItem('gameFolderId', result.folder.id);
+                gameFolderId = result.folder.id;
                 alert('Папка игры успешно выбрана!');
+                return true;
             }
         } catch (e) {
             console.error('Ошибка выбора папки:', e);
-            alert('Не удалось выбрать папку.');
+            alert('Не удалось выбрать папку. Убедитесь, что вы выбрали папку monetloader.');
         }
+        return false;
     }
 
     function renderScripts(scripts) {
@@ -69,10 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.install-btn').forEach(btn => {
             btn.addEventListener('click', async (e) => {
                 // Если папка не выбрана, просим выбрать
-                if (!gameFolderUri) {
-                    await selectFolder();
-                    if (!gameFolderUri) {
-                        alert('Без выбора папки игры установка невозможна!');
+                if (!gameFolderId) {
+                    const selected = await selectFolder();
+                    if (!selected) {
+                        alert('Без выбора папки monetloader установка невозможна!');
                         return;
                     }
                 }
@@ -84,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.target.disabled = true;
 
                 try {
-                    // Скачиваем файл по ссылке с GitHub
                     const response = await fetch(url);
                     const blob = await response.blob();
                     
@@ -97,17 +96,19 @@ document.addEventListener('DOMContentLoaded', () => {
                             try {
                                 const base64data = reader.result.split(',')[1];
                                 
-                                // Сохраняем прямо в выбранную папку monetloader
+                                // ПРАВИЛЬНАЯ передача параметров:
+                                // folder - объект { id: ... }, encoding - 'base64'
                                 await ScopedStorage.writeFile({
-                                    folder: gameFolderUri,
+                                    folder: { id: gameFolderId }, 
                                     path: `${name}.lua`,
-                                    data: base64data
+                                    data: base64data,
+                                    encoding: 'base64'
                                 });
 
                                 alert(`Файл ${name}.lua успешно установлен в игру!`);
                             } catch (err) {
                                 console.error('Ошибка записи файла:', err);
-                                alert('Ошибка записи файла в папку игры.');
+                                alert('Ошибка записи файла. Проверьте, что выбрана папка monetloader.');
                             } finally {
                                 e.target.innerText = 'Установить';
                                 e.target.disabled = false;
