@@ -318,7 +318,8 @@
     "local_url": "./scripts/auto-maska.lua",
     "color": "#38bdf8",
     "command": "/auto-mas",
-    "image": "./images/auto-maska.png"
+    "image": "./images/auto-maska.png",
+    "hidden": true
   },
   {
     "id": "anti-lomka",
