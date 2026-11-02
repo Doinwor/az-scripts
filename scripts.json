@@ -388,7 +388,8 @@
     "local_url": "./scripts/blocknotifications.lua",
     "color": "#38bdf8",
     "command": "/blocknot",
-    "image": "./images/blocknotifications.jpg"
+    "image": "./images/blocknotifications.jpg",
+    "hidden": true
   },
   {
     "id": "radius-lavki-rodina",
