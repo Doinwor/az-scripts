@@ -346,7 +346,8 @@
     "local_url": "./scripts/familyhelper.lua",
     "color": "#38bdf8",
     "command": "/familyhe",
-    "image": "./images/familyhelper.jpg"
+    "image": "./images/familyhelper.jpg",
+    "hidden": true
   },
   {
     "id": "faststop",
