@@ -416,7 +416,8 @@
     "local_url": "./scripts/central-market-rodina.lua",
     "color": "#38bdf8",
     "command": "/central-",
-    "image": "./images/central-market-rodina.png"
+    "image": "./images/central-market-rodina.png",
+    "hidden": true
   },
   {
     "id": "hp-armour-bar",
