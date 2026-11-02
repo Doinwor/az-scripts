@@ -192,7 +192,8 @@
     "local_url": "./scripts/neo-player-names-by-porty-neomloader.lua",
     "color": "#38bdf8",
     "command": "/neo-play",
-    "image": "./images/neo-player-names-by-porty-neomloader.png"
+    "image": "./images/neo-player-names-by-porty-neomloader.png",
+    "hidden": true
   },
   {
     "id": "avto-lovlya-obyavleniy",
