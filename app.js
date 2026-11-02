@@ -1,12 +1,8 @@
-// Импорт для работы внутри Android-приложения
-import { Filesystem, Directory } from '@capacitor/filesystem';
-
 document.addEventListener('DOMContentLoaded', () => {
     const scriptList = document.getElementById('script-list');
     const searchInput = document.getElementById('search-input');
     let allScripts = [];
 
-    // Загружаем базу данных (scripts.json) из текущей папки
     fetch('scripts.json')
         .then(response => response.json())
         .then(data => {
@@ -62,9 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     const response = await fetch(url);
                     const blob = await response.blob();
                     
-                    // Проверка: находимся ли мы в приложении или в браузере
+                    // Проверка: если мы в приложении (APK)
                     if (window.Capacitor) {
-                        // Если это APK-приложение (используем память телефона)
+                        const { Filesystem, Directory } = window.Capacitor.Plugins;
+                        
                         const reader = new FileReader();
                         reader.readAsDataURL(blob);
                         reader.onloadend = async () => {
@@ -74,12 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 data: base64data,
                                 directory: Directory.Documents
                             });
-                            alert(`Файл ${name}.lua скачан в Documents!`);
+                            alert(`Файл ${name}.lua скачан в папку Documents!`);
                             e.target.innerText = 'Установить';
                             e.target.disabled = false;
                         };
                     } else {
-                        // Если это обычный браузер (просто скачиваем файл)
+                        // Если открыто в обычном браузере
                         const a = document.createElement('a');
                         a.href = URL.createObjectURL(blob);
                         a.download = `${name}.lua`;
@@ -89,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 } catch (error) {
                     console.error('Ошибка:', error);
-                    alert('Ошибка скачивания файла.');
+                    alert('Ошибка скачивания. Проверь интернет.');
                     e.target.innerText = 'Установить';
                     e.target.disabled = false;
                 }
