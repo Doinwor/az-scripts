@@ -220,7 +220,8 @@
     "local_url": "./scripts/klaviatura.lua",
     "color": "#38bdf8",
     "command": "/klaviatu",
-    "image": "./images/klaviatura.jpg"
+    "image": "./images/klaviatura.jpg",
+    "hidden": true
   },
   {
     "id": "probeg-auto-farm",
