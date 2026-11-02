@@ -514,7 +514,8 @@
     "local_url": "./scripts/anti-kovsh.lua",
     "color": "#38bdf8",
     "command": "/anti-kov",
-    "image": "./images/anti-kovsh.jpg"
+    "image": "./images/anti-kovsh.jpg",
+    "hidden": true
   },
   {
     "id": "visual-gm-car",
