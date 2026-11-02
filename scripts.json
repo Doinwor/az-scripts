@@ -276,7 +276,8 @@
     "local_url": "./scripts/giroskop.lua",
     "color": "#38bdf8",
     "command": "/giroskop",
-    "image": "./images/giroskop.jpg"
+    "image": "./images/giroskop.jpg",
+    "hidden": true
   },
   {
     "id": "avtoprohozhdenie-mini-igry-na-lesopilke-dvk",
