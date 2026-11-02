@@ -1,4 +1,3 @@
-@@ -1,160 +1,52 @@
 :root {
     --bg-color: #0f0f13;
     --card-bg: rgba(28, 28, 34, 0.7);
@@ -7,15 +6,6 @@
     --accent: #6a5acd;
     --accent-hover: #5a4cb8;
     --glass-border: rgba(255, 255, 255, 0.08);
-/* Стили для рейтинга */
-.rating-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    background: rgba(0,0,0,0.2);
-    padding: 8px;
-    border-radius: 10px;
 }
 
 * {
@@ -24,37 +14,31 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     -webkit-tap-highlight-color: transparent;
-.rating-buttons {
-    display: flex;
-    gap: 5px;
+}
+
+html { 
+    background-color: #050508; 
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
     padding-bottom: 90px; 
-    max-width: 480px; /* Ограничение для ПК */
+    max-width: 480px;
     margin: 0 auto;
     border-left: 1px solid var(--glass-border);
     border-right: 1px solid var(--glass-border);
     min-height: 100vh;
     position: relative;
-.vote-btn {
-    background: rgba(255,255,255,0.1);
-    border: none;
-    border-radius: 6px;
-    padding: 4px 8px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.2s;
 }
-.vote-btn:active { transform: scale(0.9); }
 
-/* Чтобы фон вокруг был темным */
-html { background-color: #050508; }
-
-.view { display: none; animation: fadeIn 0.3s ease-in-out; }
-.view.active-view { display: block; }
+.view { 
+    display: none; 
+    animation: fadeIn 0.3s ease-in-out; 
+}
+.view.active-view { 
+    display: block; 
+}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
@@ -99,31 +83,18 @@ html { background-color: #050508; }
     height: 140px; position: relative; padding: 12px;
     display: flex; justify-content: space-between; align-items: flex-start;
     background-size: cover; background-position: center;
-.rating-bar-container {
-    flex-grow: 1;
 }
 
 .badge {
     background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(4px);
     padding: 6px 12px; border-radius: 10px; font-size: 12px;
     font-weight: 600; color: #4ade80;
-.rating-bar-bg {
-    width: 100%;
-    height: 6px;
-    background: #f87171; /* Красный по умолчанию */
-    border-radius: 3px;
-    overflow: hidden;
 }
 
 .fav-btn {
     background: rgba(0, 0, 0, 0.6); border: none; width: 36px; height: 36px;
     border-radius: 50%; display: flex; align-items: center; justify-content: center;
     font-size: 18px; cursor: pointer;
-.rating-bar-fill {
-    height: 100%;
-    background: #4ade80; /* Зеленый */
-    border-radius: 3px;
-    transition: width 0.4s ease;
 }
 
 .card-content { padding: 16px; }
@@ -156,11 +127,6 @@ html { background-color: #050508; }
     background: #1c1c22; width: 90%; max-width: 420px;
     border-radius: 20px; overflow: hidden; border: 1px solid var(--glass-border);
     position: relative; transform: translateY(20px); transition: 0.3s;
-.rating-score {
-    font-size: 13px;
-    font-weight: 700;
-    min-width: 30px;
-    text-align: right;
 }
 .modal-overlay.active .modal-content { transform: translateY(0); }
 
@@ -198,3 +164,56 @@ html { background-color: #050508; }
 .toast.success { border-left: 4px solid #4ade80; }
 .toast.error { border-left: 4px solid #f87171; }
 @keyframes toastIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* СТИЛИ ДЛЯ РЕЙТИНГА (Добавлены в конец, чтобы не сломать остальное) */
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    background: rgba(0,0,0,0.2);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.rating-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.vote-btn {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.vote-btn:active { transform: scale(0.9); }
+
+.rating-bar-container {
+    flex-grow: 1;
+}
+
+.rating-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: #f87171;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.rating-bar-fill {
+    height: 100%;
+    background: #4ade80;
+    border-radius: 3px;
+    transition: width 0.4s ease;
+}
+
+.rating-score {
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 30px;
+    text-align: right;
+}
