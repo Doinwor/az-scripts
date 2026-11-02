@@ -444,7 +444,8 @@
     "local_url": "./scripts/timeonscreenv2.lua",
     "color": "#ff6a3d",
     "command": "/timeonsc",
-    "image": "./images/timeonscreenv2.jpg"
+    "image": "./images/timeonscreenv2.jpg",
+    "hidden": true
   },
   {
     "id": "nofuckingprops-neosyazaemye-stolby",
