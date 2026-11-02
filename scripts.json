@@ -360,7 +360,8 @@
     "local_url": "./scripts/faststop.lua",
     "color": "#38bdf8",
     "command": "/faststop",
-    "image": "./images/faststop.png"
+    "image": "./images/faststop.png",
+    "hidden": true
   },
   {
     "id": "chatcolor",
