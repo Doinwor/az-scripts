@@ -9,41 +9,59 @@
 </head>
 <body>
 
-    <!-- Контейнер для красивых уведомлений -->
     <div id="toast-container"></div>
 
     <header class="header">
-        <div class="logo">
-            <span>🛡️</span> AZ Scripts
+        <div class="logo" id="page-title">
+            <span>🛡️</span> Каталог
         </div>
-        <button class="settings-btn">⚙️</button>
     </header>
 
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Поиск проверенных скриптов..." class="search-input">
+    <!-- ЭКРАН 1: КАТАЛОГ -->
+    <div id="view-catalog" class="view active-view">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Поиск проверенных скриптов..." class="search-input">
+        </div>
+
+        <div class="tags-scroll" id="category-filters">
+            <span class="tag active" data-category="all">Все</span>
+            <span class="tag" data-category="Хелперы">Хелперы</span>
+            <span class="tag" data-category="Оптимизация">Оптимизация</span>
+            <span class="tag" data-category="Бинды">Бинды</span>
+        </div>
+
+        <main class="script-list" id="script-list">
+            <!-- Карточки -->
+        </main>
     </div>
 
-    <div class="tags-scroll">
-        <span class="tag active">Все</span>
-        <span class="tag">Хелперы</span>
-        <span class="tag">Оптимизация</span>
+    <!-- ЭКРАН 2: ИЗБРАННОЕ -->
+    <div id="view-favorites" class="view">
+        <main class="script-list" id="favorites-list">
+            <!-- Избранные карточки -->
+        </main>
     </div>
 
-    <main class="script-list" id="script-list">
-        <!-- Сюда будут загружаться карточки -->
-    </main>
+    <!-- ЭКРАН 3: НАСТРОЙКИ -->
+    <div id="view-settings" class="view">
+        <div class="settings-card">
+            <h2>Настройки</h2>
+            <p>Если приложение перестало устанавливать скрипты, сбросьте путь к папке игры.</p>
+            <button id="reset-folder-btn" class="install-btn" style="width: 100%; margin-top: 15px;">Сбросить папку игры</button>
+        </div>
+    </div>
 
-    <!-- Нижняя панель навигации -->
+    <!-- НИЖНЯЯ НАВИГАЦИЯ -->
     <nav class="bottom-nav">
-        <a href="#" class="nav-item active">
+        <a href="#" class="nav-item active" data-target="view-catalog">
             <span class="nav-icon">📁</span>
             <span class="nav-text">Каталог</span>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="nav-item" data-target="view-favorites">
             <span class="nav-icon">❤️</span>
             <span class="nav-text">Избранное</span>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="nav-item" data-target="view-settings">
             <span class="nav-icon">⚙️</span>
             <span class="nav-text">Настройки</span>
         </a>
