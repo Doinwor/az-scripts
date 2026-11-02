@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     let allScripts = [];
 
-    // Восстанавливаем сохраненный ID папки
     let gameFolderId = localStorage.getItem('gameFolderId');
 
     fetch('scripts.json')
@@ -29,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (e) {
             console.error('Ошибка выбора папки:', e);
-            alert('Не удалось выбрать папку. Убедитесь, что вы выбрали папку monetloader.');
+            alert('Не удалось выбрать папку.');
         }
         return false;
     }
@@ -68,8 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelectorAll('.install-btn').forEach(btn => {
             btn.addEventListener('click', async (e) => {
-                // Если папка не выбрана, просим выбрать
-                if (!gameFolderId) {
+                if (!gameFolderId && window.Capacitor) {
                     const selected = await selectFolder();
                     if (!selected) {
                         alert('Без выбора папки monetloader установка невозможна!');
@@ -85,7 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 try {
                     const response = await fetch(url);
-                    const blob = await response.blob();
+                    const rawBlob = await response.blob();
+                    // Принудительно делаем файл бинарным
+                    const blob = new Blob([rawBlob], { type: 'application/octet-stream' });
                     
                     if (window.Capacitor) {
                         const { ScopedStorage } = window.Capacitor.Plugins;
@@ -95,25 +95,31 @@ document.addEventListener('DOMContentLoaded', () => {
                         reader.onloadend = async () => {
                             try {
                                 const base64data = reader.result.split(',')[1];
-                                
-                                // ПРАВИЛЬНАЯ передача параметров:
-                                // folder - объект { id: ... }, encoding - 'base64'
                                 await ScopedStorage.writeFile({
                                     folder: { id: gameFolderId }, 
                                     path: `${name}.lua`,
                                     data: base64data,
-                                    encoding: 'base64'
+                                    encoding: 'base64',
+                                    // ЖЕСТКО ЗАДАЕМ ТИП ФАЙЛА, ЧТОБЫ ANDROID НЕ ДОБАВЛЯЛ .txt
+                                    mimeType: 'application/octet-stream' 
                                 });
-
                                 alert(`Файл ${name}.lua успешно установлен в игру!`);
                             } catch (err) {
                                 console.error('Ошибка записи файла:', err);
-                                alert('Ошибка записи файла. Проверьте, что выбрана папка monetloader.');
+                                alert('Ошибка записи. Убедитесь, что выбрана папка monetloader.');
                             } finally {
                                 e.target.innerText = 'Установить';
                                 e.target.disabled = false;
                             }
                         };
+                    } else {
+                        // Для браузера
+                        const a = document.createElement('a');
+                        a.href = URL.createObjectURL(blob);
+                        a.download = `${name}.lua`;
+                        a.click();
+                        e.target.innerText = 'Установить';
+                        e.target.disabled = false;
                     }
                 } catch (error) {
                     console.error('Ошибка сети:', error);
