@@ -84,8 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     const response = await fetch(url);
                     const rawBlob = await response.blob();
-                    // Принудительно делаем файл бинарным
-                    const blob = new Blob([rawBlob], { type: 'application/octet-stream' });
+                    
+                    // Указываем, что это скрипт Lua
+                    const blob = new Blob([rawBlob], { type: 'application/x-lua' });
                     
                     if (window.Capacitor) {
                         const { ScopedStorage } = window.Capacitor.Plugins;
@@ -95,13 +96,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         reader.onloadend = async () => {
                             try {
                                 const base64data = reader.result.split(',')[1];
+                                
+                                // Сохраняем с четким указанием mimeType
                                 await ScopedStorage.writeFile({
                                     folder: { id: gameFolderId }, 
                                     path: `${name}.lua`,
                                     data: base64data,
                                     encoding: 'base64',
-                                    // ЖЕСТКО ЗАДАЕМ ТИП ФАЙЛА, ЧТОБЫ ANDROID НЕ ДОБАВЛЯЛ .txt
-                                    mimeType: 'application/octet-stream' 
+                                    mimeType: 'application/x-lua' // Принудительно указываем формат
                                 });
                                 alert(`Файл ${name}.lua успешно установлен в игру!`);
                             } catch (err) {
@@ -113,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         };
                     } else {
-                        // Для браузера
+                        // Для браузера на компьютере
                         const a = document.createElement('a');
                         a.href = URL.createObjectURL(blob);
                         a.download = `${name}.lua`;
