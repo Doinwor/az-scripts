@@ -10,7 +10,8 @@
     "local_url": "./scripts/x32-unlock-60-fps.lua",
     "color": "#ff6a3d",
     "command": "/x32-unlo",
-    "image": "./images/x32-unlock-60-fps.jpg"
+    "image": "./images/x32-unlock-60-fps.jpg",
+    "hidden": true
   },
   {
     "id": "arizona-helper",
