@@ -135,7 +135,8 @@
     "local_url": "./scripts/dillbot.lua",
     "color": "#38bdf8",
     "command": "/dillbot",
-    "image": "./images/dillbot.jpg"
+    "image": "./images/dillbot.jpg",
+    "hidden": true
   },
   {
     "id": "barrelsell-rodina-rp",
