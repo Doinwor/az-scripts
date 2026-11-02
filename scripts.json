@@ -38,7 +38,8 @@
     "local_url": "./scripts/bot-na-lesopilku.zip",
     "color": "#f43f5e",
     "command": "/bot-na-l",
-    "image": "./images/bot-na-lesopilku.jpg"
+    "image": "./images/bot-na-lesopilku.jpg",
+    "hidden": true
   },
   {
     "id": "insuranceauto-stk-pomoschnik",
