@@ -528,7 +528,8 @@
     "local_url": "./scripts/visual-gm-car.lua",
     "color": "#38bdf8",
     "command": "/visual-g",
-    "image": "./images/visual-gm-car.jpg"
+    "image": "./images/visual-gm-car.jpg",
+    "hidden": true
   },
   {
     "id": "beloe-hp-i-armour",
