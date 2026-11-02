@@ -1,3 +1,22 @@
+// 1. Подключаем Firebase прямо из интернета
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getDatabase, ref, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+// 2. Твой конфиг из Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCHZmCcwcd4rJ7Icw4WIK_DbuF4c1wkhtrk",
+  authDomain: "az-scripts.firebaseapp.com",
+  databaseURL: "https://az-scripts-default-rtdb.firebaseio.com",
+  projectId: "az-scripts",
+  storageBucket: "az-scripts.firebasestorage.app",
+  messagingSenderId: "1057071984779",
+  appId: "1:1057071984779:web:d008b2cc1e971707cfe48e",
+  measurementId: "G-K6JF3J1C35"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
 document.addEventListener('DOMContentLoaded', () => {
     const scriptList = document.getElementById('script-list');
     const favoritesList = document.getElementById('favorites-list');
@@ -35,6 +54,41 @@ document.addEventListener('DOMContentLoaded', () => {
             renderCatalog(allScripts);
             renderFavorites();
         });
+
+    // Подписка на изменения рейтинга в Firebase
+    function listenRating(scriptId) {
+        const scoreEl = document.getElementById(`score-${scriptId}`);
+        const barEl = document.getElementById(`bar-${scriptId}`);
+        if (!scoreEl || !barEl) return;
+
+        const scriptRef = ref(db, 'ratings/' + scriptId);
+        onValue(scriptRef, (snapshot) => {
+            const data = snapshot.val() || { up: 0, down: 0 };
+            const total = data.up + data.down;
+            let score = 0;
+            let percent = 50;
+
+            if (total > 0) {
+                score = ((data.up - data.down) / total * 100).toFixed(0);
+                percent = (data.up / total) * 100;
+            }
+
+            scoreEl.innerText = score;
+            scoreEl.style.color = score > 0 ? '#4ade80' : (score < 0 ? '#f87171' : '#888');
+            barEl.style.width = `${percent}%`;
+        });
+    }
+
+    // Голосование
+    async function vote(scriptId, type) {
+        const scriptRef = ref(db, 'ratings/' + scriptId);
+        await runTransaction(scriptRef, (currentData) => {
+            if (!currentData) currentData = { up: 0, down: 0 };
+            if (type === 'up') currentData.up += 1;
+            if (type === 'down') currentData.down += 1;
+            return currentData;
+        });
+    }
 
     // Переключение вкладок
     document.querySelectorAll('.nav-item').forEach(item => {
@@ -102,6 +156,21 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card-content">
                 <h3 class="card-title">${script.name}</h3>
                 <p class="card-author">Автор: <span>${script.author}</span></p>
+                
+                <!-- Блок рейтинга -->
+                <div class="rating-row">
+                    <div class="rating-buttons">
+                        <button class="vote-btn" onclick="event.stopPropagation(); window.voteScript('${script.id}', 'up')">👍</button>
+                        <button class="vote-btn" onclick="event.stopPropagation(); window.voteScript('${script.id}', 'down')">👎</button>
+                    </div>
+                    <div class="rating-bar-container">
+                        <div class="rating-bar-bg">
+                            <div class="rating-bar-fill" id="bar-${script.id}" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <span class="rating-score" id="score-${script.id}">0</span>
+                </div>
+
                 <div class="card-tags">
                     <span class="mini-tag">${script.category}</span>
                     <span class="mini-tag">v${script.version}</span>
@@ -113,9 +182,11 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        // Клик по избранному (не открывает модалку)
+        // Подписываемся на рейтинг для этой карточки
+        setTimeout(() => listenRating(script.id), 0);
+
         card.querySelector('.fav-btn').addEventListener('click', (e) => {
-            e.stopPropagation(); // Останавливаем всплытие
+            e.stopPropagation();
             const id = e.target.getAttribute('data-id');
             if (favorites.includes(id)) {
                 favorites = favorites.filter(f => f !== id);
@@ -130,59 +201,41 @@ document.addEventListener('DOMContentLoaded', () => {
             renderFavorites();
         });
 
-        // Клик по кнопке установки (не открывает модалку)
         card.querySelector('.install-btn').addEventListener('click', (e) => {
-            e.stopPropagation(); // Останавливаем всплытие
+            e.stopPropagation();
             installScript(script.download_url, script.id, e.target);
         });
 
-        // Клик по самой карточке открывает модалку
-        card.addEventListener('click', () => {
-            openModal(script);
-        });
-
+        card.addEventListener('click', () => openModal(script));
         return card;
     }
 
-    // Открытие модального окна
+    // Делаем функцию голосования глобальной, чтобы onclick сработал
+    window.voteScript = (id, type) => vote(id, type);
+
     function openModal(script) {
         currentModalScript = script;
         const bgImage = script.image ? `background-image: url('${script.image}');` : `background: ${script.color || '#2a2a35'};`;
-        
         modalImage.style = bgImage;
         modalTitle.innerText = script.name;
         modalAuthor.innerText = script.author;
         modalDescription.innerText = script.description || "Описание отсутствует.";
         modalLoader.innerText = script.loader;
-        
         modal.classList.add('active');
     }
 
-    // Закрытие модалки
-    closeModalBtn.addEventListener('click', () => {
-        modal.classList.remove('active');
-    });
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) modal.classList.remove('active'); // Клик по фону закрывает
-    });
+    closeModalBtn.addEventListener('click', () => modal.classList.remove('active'));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('active'); });
 
-    // Установка из модалки
     modalInstallBtn.addEventListener('click', () => {
-        if (currentModalScript) {
-            installScript(currentModalScript.download_url, currentModalScript.id, modalInstallBtn);
-        }
+        if (currentModalScript) installScript(currentModalScript.download_url, currentModalScript.id, modalInstallBtn);
     });
 
-    // Общая функция установки
     async function installScript(url, name, btnElement) {
         if (!gameFolderId && window.Capacitor) {
             const selected = await selectFolder();
-            if (!selected) {
-                showToast('Без выбора папки установка невозможна!', 'error');
-                return;
-            }
+            if (!selected) { showToast('Без выбора папки установка невозможна!', 'error'); return; }
         }
-        
         const originalText = btnElement.innerText;
         btnElement.innerText = 'Скачивание...';
         btnElement.disabled = true;
