@@ -234,7 +234,8 @@
     "local_url": "./scripts/probeg-auto-farm.lua",
     "color": "#38bdf8",
     "command": "/probeg-a",
-    "image": "./images/probeg-auto-farm.jpg"
+    "image": "./images/probeg-auto-farm.jpg",
+    "hidden": true
   },
   {
     "id": "ghetto-mini-helper",
