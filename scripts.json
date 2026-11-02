@@ -430,7 +430,8 @@
     "local_url": "./scripts/hp-armour-bar.lua",
     "color": "#38bdf8",
     "command": "/hp-armou",
-    "image": "./images/hp-armour-bar.jpg"
+    "image": "./images/hp-armour-bar.jpg",
+    "hidden": true
   },
   {
     "id": "timeonscreenv2",
