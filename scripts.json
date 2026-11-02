@@ -6,7 +6,8 @@
     "category": "Оптимизация",
     "loader": "MonetLoader",
     "version": "1.2.0",
-    "description": "Убирает ограничение в 60 fps на мобильной версии.",
+    "description": "Убирает ограничение в 60 fps на мобильной версии. Значительно повышает плавность игры на слабых устройствах и устраняет фризы во время перестрелок.",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop",
     "download_url": "https://doinwor.github.io/az-scripts/scripts/unlock_fps.lua",
     "color": "linear-gradient(135deg, #1e130c, #9a8478)"
   },
@@ -17,7 +18,8 @@
     "category": "Бинды",
     "loader": "NeoMLoader",
     "version": "2.0.1",
-    "description": "Удобный биндер для быстрого ввода команд.",
+    "description": "Удобный биндер для быстрого ввода команд. Поддерживает сложные макросы, задержки и автоматическую отправку сообщений в чат.",
+    "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop",
     "download_url": "https://doinwor.github.io/az-scripts/scripts/binder.lua",
     "color": "linear-gradient(135deg, #2b1055, #7597de)"
   }
