@@ -161,7 +161,8 @@
     "local_url": "./scripts/oil-timer-rodina-rp.lua",
     "color": "#ff6a3d",
     "command": "/oil-time",
-    "image": "./images/oil-timer-rodina-rp.jpeg"
+    "image": "./images/oil-timer-rodina-rp.jpeg",
+    "hidden": true
   },
   {
     "id": "autoflip-avtomaticheskiy-domkrat",
