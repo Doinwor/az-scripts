@@ -665,7 +665,8 @@ import {
       if (!response.ok) throw new Error('HTTP error ' + response.status);
 
       const data = await response.json();
-      state.allScripts = Array.isArray(data) ? data : [];
+      // Загружаем данные и сразу отфильтровываем скрытые скрипты
+state.allScripts = Array.isArray(data) ? data.filter(script => !script.hidden) : [];
       state.loading = false;
       applyFiltersAndRender();
       updateCategoryCounts();
