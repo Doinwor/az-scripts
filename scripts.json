@@ -94,7 +94,8 @@
     "local_url": "./scripts/ukrmap.lua",
     "color": "#38bdf8",
     "command": "/ukrmap",
-    "image": "./images/ukrmap.jpg"
+    "image": "./images/ukrmap.jpg",
+    "hidden": true
   },
   {
     "id": "mmt-mining-tool",
