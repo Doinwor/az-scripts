@@ -458,7 +458,8 @@
     "local_url": "./scripts/nofuckingprops-neosyazaemye-stolby.lua",
     "color": "#38bdf8",
     "command": "/nofuckin",
-    "image": "./images/nofuckingprops-neosyazaemye-stolby.jpg"
+    "image": "./images/nofuckingprops-neosyazaemye-stolby.jpg",
+    "hidden": true
   },
   {
     "id": "arizona-mobile-stream-chat-modded-v1-5",
