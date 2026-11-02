@@ -148,7 +148,8 @@
     "local_url": "./scripts/barrelsell-rodina-rp.lua",
     "color": "#38bdf8",
     "command": "/barrelse",
-    "image": "./images/barrelsell-rodina-rp.jpeg"
+    "image": "./images/barrelsell-rodina-rp.jpeg",
+    "hidden": true
   },
   {
     "id": "oil-timer-rodina-rp",
