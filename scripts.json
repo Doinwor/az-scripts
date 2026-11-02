@@ -108,7 +108,8 @@
     "local_url": "./scripts/mmt-mining-tool.lua",
     "color": "#38bdf8",
     "command": "/mmt-mini",
-    "image": "./images/mmt-mining-tool.jpg"
+    "image": "./images/mmt-mining-tool.jpg",
+    "hidden": true
   },
   {
     "id": "crafthelper",
