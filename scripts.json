@@ -374,7 +374,8 @@
     "local_url": "./scripts/chatcolor.lua",
     "color": "#38bdf8",
     "command": "/chatcolo",
-    "image": "./images/chatcolor.jpg"
+    "image": "./images/chatcolor.jpg",
+    "hidden": true
   },
   {
     "id": "blocknotifications",
