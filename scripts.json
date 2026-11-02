@@ -542,7 +542,8 @@
     "local_url": "./scripts/beloe-hp-i-armour.lua",
     "color": "#38bdf8",
     "command": "/beloe-hp",
-    "image": "./images/beloe-hp-i-armour.jpg"
+    "image": "./images/beloe-hp-i-armour.jpg",
+    "hidden": true
   },
   {
     "id": "vconline",
