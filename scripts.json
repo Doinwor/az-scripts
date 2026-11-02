@@ -10,7 +10,7 @@
     "local_url": "./scripts/x32-unlock-60-fps.lua",
     "color": "#ff6a3d",
     "command": "/x32-unlo",
-    "hidden": false
+    "image": "./images/x32-unlock-60-fps.jpg"
   },
   {
     "id": "arizona-helper",
@@ -22,7 +22,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/8/8e9b3994df69b99d82282eaf75b1daedb9b1521fd8e595f840e51b0dcbcc9cd5.lua",
     "local_url": "./scripts/arizona-helper.lua",
     "color": "#38bdf8",
-    "command": "/arizona-"
+    "command": "/arizona-",
+    "image": "./images/arizona-helper.jpg"
   },
   {
     "id": "bot-na-lesopilku",
@@ -34,7 +35,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4538/06e9faabbcebbdfd8ba341db8f445e935908fc9f907118db0b1852a783af91cc.zip",
     "local_url": "./scripts/bot-na-lesopilku.zip",
     "color": "#f43f5e",
-    "command": "/bot-na-l"
+    "command": "/bot-na-l",
+    "image": "./images/bot-na-lesopilku.jpg"
   },
   {
     "id": "insuranceauto-stk-pomoschnik",
@@ -46,7 +48,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/1eb37e5d5b64290678bc542043df42c10c3fae009cb7e78cf3e3ded583080b21.lua",
     "local_url": "./scripts/insuranceauto-stk-pomoschnik.lua",
     "color": "#38bdf8",
-    "command": "/insuranc"
+    "command": "/insuranc",
+    "image": "./images/insuranceauto-stk-pomoschnik.jpg"
   },
   {
     "id": "rhl2-0-helper-dlya-lovli",
@@ -58,7 +61,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/3658/889cffd1d05fc48a07f724b3c3f41cae5995b767e22c6256c08d77ef7b091c53.lua",
     "local_url": "./scripts/rhl2-0-helper-dlya-lovli.lua",
     "color": "#38bdf8",
-    "command": "/rhl2-0-h"
+    "command": "/rhl2-0-h",
+    "image": "./images/rhl2-0-helper-dlya-lovli.jpg"
   },
   {
     "id": "parovozov-multi-tools-v1-0-rodina-monetloader",
@@ -70,7 +74,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/3810/a41a46d68b8a1d1b5eec0311a51881e966cfa342663fc8bd2d95bb2f6c04ced2.lua",
     "local_url": "./scripts/parovozov-multi-tools-v1-0-rodina-monetloader.lua",
     "color": "#38bdf8",
-    "command": "/parovozo"
+    "command": "/parovozo",
+    "image": "./images/parovozov-multi-tools-v1-0-rodina-monetloader.png"
   },
   {
     "id": "ukrmap",
@@ -82,7 +87,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/661/c299a2a57ca96fe474acb939145a427c5afb2ba3c5d0f321e699a1c1aa093ac1.lua",
     "local_url": "./scripts/ukrmap.lua",
     "color": "#38bdf8",
-    "command": "/ukrmap"
+    "command": "/ukrmap",
+    "image": "./images/ukrmap.jpg"
   },
   {
     "id": "mmt-mining-tool",
@@ -94,7 +100,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/5859/b6a7bb97d1ecfec828bc7a314e97e0fd828216dcd295245d65d2c064e848992b.lua",
     "local_url": "./scripts/mmt-mining-tool.lua",
     "color": "#38bdf8",
-    "command": "/mmt-mini"
+    "command": "/mmt-mini",
+    "image": "./images/mmt-mining-tool.jpg"
   },
   {
     "id": "crafthelper",
@@ -106,7 +113,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4538/3715fd8d52b64097adb36811ef56e3a799641bfc473e8eb9077c66f0331ef70a.lua",
     "local_url": "./scripts/crafthelper.lua",
     "color": "#38bdf8",
-    "command": "/crafthel"
+    "command": "/crafthel",
+    "image": "./images/crafthelper.jpg"
   },
   {
     "id": "dillbot",
@@ -118,7 +126,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/661/2d6507c446f315ed269579fc3369b24b5eb65514bde167baaf92c6770a3dc447.lua",
     "local_url": "./scripts/dillbot.lua",
     "color": "#38bdf8",
-    "command": "/dillbot"
+    "command": "/dillbot",
+    "image": "./images/dillbot.jpg"
   },
   {
     "id": "barrelsell-rodina-rp",
@@ -130,7 +139,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4627/9ee1265c4ae15a0812257e2f4c5226c4f2d82e61173f2bf0c1a28378a52f3369.lua",
     "local_url": "./scripts/barrelsell-rodina-rp.lua",
     "color": "#38bdf8",
-    "command": "/barrelse"
+    "command": "/barrelse",
+    "image": "./images/barrelsell-rodina-rp.jpeg"
   },
   {
     "id": "oil-timer-rodina-rp",
@@ -142,7 +152,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4627/5fd145cdd694ff387cd3eeb79de503bb8afe4dc3dbe4df69eaffac63e13ce1df.lua",
     "local_url": "./scripts/oil-timer-rodina-rp.lua",
     "color": "#ff6a3d",
-    "command": "/oil-time"
+    "command": "/oil-time",
+    "image": "./images/oil-timer-rodina-rp.jpeg"
   },
   {
     "id": "autoflip-avtomaticheskiy-domkrat",
@@ -154,7 +165,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/69b65b01221fb8562ed2c772791765bad0bb021ccec0c354c5fef728e4a6cc34.lua",
     "local_url": "./scripts/autoflip-avtomaticheskiy-domkrat.lua",
     "color": "#38bdf8",
-    "command": "/autoflip"
+    "command": "/autoflip",
+    "image": "./images/autoflip-avtomaticheskiy-domkrat.png"
   },
   {
     "id": "neo-player-names-by-porty-neomloader",
@@ -166,7 +178,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1737/4335f863b529d80af772c2d9593ade988bfc5bc58013928495fe693b384d314c.lua",
     "local_url": "./scripts/neo-player-names-by-porty-neomloader.lua",
     "color": "#38bdf8",
-    "command": "/neo-play"
+    "command": "/neo-play",
+    "image": "./images/neo-player-names-by-porty-neomloader.png"
   },
   {
     "id": "avto-lovlya-obyavleniy",
@@ -178,7 +191,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/7215f2da48b51cc7b35fbbdbcf01a29c7a54635c3e9bcf09d6b0cda22afab4a4.lua",
     "local_url": "./scripts/avto-lovlya-obyavleniy.lua",
     "color": "#f43f5e",
-    "command": "/avto-lov"
+    "command": "/avto-lov",
+    "image": "./images/avto-lovlya-obyavleniy.jpg"
   },
   {
     "id": "klaviatura",
@@ -190,7 +204,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/5811/f3d36242718082cc230acb94ea6d26f9767f5f47d8dbc372e45ef01ebd74a498.lua",
     "local_url": "./scripts/klaviatura.lua",
     "color": "#38bdf8",
-    "command": "/klaviatu"
+    "command": "/klaviatu",
+    "image": "./images/klaviatura.jpg"
   },
   {
     "id": "probeg-auto-farm",
@@ -202,7 +217,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4538/20ccc1d59026c971c1c093ce582f578ca10daf4d10225f31a0ce0c84107f7785.lua",
     "local_url": "./scripts/probeg-auto-farm.lua",
     "color": "#38bdf8",
-    "command": "/probeg-a"
+    "command": "/probeg-a",
+    "image": "./images/probeg-auto-farm.jpg"
   },
   {
     "id": "ghetto-mini-helper",
@@ -214,7 +230,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4538/330e464f23d876be8704e34ae5a29a8fe75ffe301a353d38910c9c91f68fa7ab.lua",
     "local_url": "./scripts/ghetto-mini-helper.lua",
     "color": "#38bdf8",
-    "command": "/ghetto-m"
+    "command": "/ghetto-m",
+    "image": "./images/ghetto-mini-helper.jpg"
   },
   {
     "id": "RodinaOptimizer",
@@ -226,7 +243,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/690/258a483cc216716437785a559141176029c038860c4dbb4192655753d0c75ec0.lua",
     "local_url": "./scripts/RodinaOptimizer.lua",
     "color": "#38bdf8",
-    "command": "/RodinaOp"
+    "command": "/RodinaOp",
+    "image": "./images/RodinaOptimizer.jpg"
   },
   {
     "id": "giroskop",
@@ -238,7 +256,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/5811/03804f5d2ff120c4b962ae253683bc5be116474822bc7c62402380936365c628.lua",
     "local_url": "./scripts/giroskop.lua",
     "color": "#38bdf8",
-    "command": "/giroskop"
+    "command": "/giroskop",
+    "image": "./images/giroskop.jpg"
   },
   {
     "id": "avtoprohozhdenie-mini-igry-na-lesopilke-dvk",
@@ -250,7 +269,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4538/3e46c1758f0368b3b63048a7ea25ae2aee02044040eb3282b1c69b0203077e21.lua",
     "local_url": "./scripts/avtoprohozhdenie-mini-igry-na-lesopilke-dvk.lua",
     "color": "#38bdf8",
-    "command": "/avtoproh"
+    "command": "/avtoproh",
+    "image": "./images/avtoprohozhdenie-mini-igry-na-lesopilke-dvk.jpg"
   },
   {
     "id": "tsr-bot-bot-na-tsr",
@@ -262,7 +282,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4538/81d30c08722a29cbe1b2b34dceb5192c30a1e8d9c2b0e4e522da4f3110e89bcb.lua",
     "local_url": "./scripts/tsr-bot-bot-na-tsr.lua",
     "color": "#f43f5e",
-    "command": "/tsr-bot-"
+    "command": "/tsr-bot-",
+    "image": "./images/tsr-bot-bot-na-tsr.jpg"
   },
   {
     "id": "auto-maska",
@@ -274,7 +295,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/5493/6f851359c1ff5889ebee0cc1b0bb32f90a89dfea14782c24ac7e0c07c26b6278.lua",
     "local_url": "./scripts/auto-maska.lua",
     "color": "#38bdf8",
-    "command": "/auto-mas"
+    "command": "/auto-mas",
+    "image": "./images/auto-maska.png"
   },
   {
     "id": "anti-lomka",
@@ -286,7 +308,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/5493/69de5da500f8c2d3fe607ea6ca047ef2f3f028ac83959f2d5b586378e4808cca.lua",
     "local_url": "./scripts/anti-lomka.lua",
     "color": "#38bdf8",
-    "command": "/anti-lom"
+    "command": "/anti-lom",
+    "image": "./images/anti-lomka.png"
   },
   {
     "id": "familyhelper",
@@ -298,7 +321,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1555/cbaae34cc87c9b821189c77007a936e398fd11ec13cf410662d914b8fb67593f.lua",
     "local_url": "./scripts/familyhelper.lua",
     "color": "#38bdf8",
-    "command": "/familyhe"
+    "command": "/familyhe",
+    "image": "./images/familyhelper.jpg"
   },
   {
     "id": "faststop",
@@ -310,7 +334,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/3f58e8b65f7aaf222b9227ea9f283f9e7b34c7c46820c21e38a53c4bded8c659.lua",
     "local_url": "./scripts/faststop.lua",
     "color": "#38bdf8",
-    "command": "/faststop"
+    "command": "/faststop",
+    "image": "./images/faststop.png"
   },
   {
     "id": "chatcolor",
@@ -322,7 +347,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/ad83265d7775519e54161318984ce99c5c7bc30d046a73dc8ba90925614bb6aa.lua",
     "local_url": "./scripts/chatcolor.lua",
     "color": "#38bdf8",
-    "command": "/chatcolo"
+    "command": "/chatcolo",
+    "image": "./images/chatcolor.jpg"
   },
   {
     "id": "blocknotifications",
@@ -334,7 +360,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/f3b364533cfcbd7566b785fd8dd27a5811965daaae65353adfd3f4cd753db25d.lua",
     "local_url": "./scripts/blocknotifications.lua",
     "color": "#38bdf8",
-    "command": "/blocknot"
+    "command": "/blocknot",
+    "image": "./images/blocknotifications.jpg"
   },
   {
     "id": "radius-lavki-rodina",
@@ -346,7 +373,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/252/de7de42a7347cbf2ebff98d61b37747959e7ef29bed4f58f2266d1d972f36bb5.lua",
     "local_url": "./scripts/radius-lavki-rodina.lua",
     "color": "#38bdf8",
-    "command": "/radius-l"
+    "command": "/radius-l",
+    "image": "./images/radius-lavki-rodina.jpg"
   },
   {
     "id": "central-market-rodina",
@@ -358,7 +386,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/252/078aebaada745958e808c082982ee6e26415d242af3db67bee06110cba63b773.lua",
     "local_url": "./scripts/central-market-rodina.lua",
     "color": "#38bdf8",
-    "command": "/central-"
+    "command": "/central-",
+    "image": "./images/central-market-rodina.png"
   },
   {
     "id": "hp-armour-bar",
@@ -370,7 +399,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4538/9d51aba8c9cd8db62573bf9916352ca3eb90be69e66db0c62575a9bedf3fda6b.lua",
     "local_url": "./scripts/hp-armour-bar.lua",
     "color": "#38bdf8",
-    "command": "/hp-armou"
+    "command": "/hp-armou",
+    "image": "./images/hp-armour-bar.jpg"
   },
   {
     "id": "timeonscreenv2",
@@ -382,7 +412,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/a9cf3b33e91f2d28edd953dd5221732738bf4f784a75a47d2dc4c57bc442b5fb.lua",
     "local_url": "./scripts/timeonscreenv2.lua",
     "color": "#ff6a3d",
-    "command": "/timeonsc"
+    "command": "/timeonsc",
+    "image": "./images/timeonscreenv2.jpg"
   },
   {
     "id": "nofuckingprops-neosyazaemye-stolby",
@@ -394,7 +425,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/e77eddab44d535c6030740a7ab102b2753f12019b3307883cf664177fa0abc16.lua",
     "local_url": "./scripts/nofuckingprops-neosyazaemye-stolby.lua",
     "color": "#38bdf8",
-    "command": "/nofuckin"
+    "command": "/nofuckin",
+    "image": "./images/nofuckingprops-neosyazaemye-stolby.jpg"
   },
   {
     "id": "arizona-mobile-stream-chat-modded-v1-5",
@@ -406,7 +438,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/3647/6dbf10be1e00fd79014f52222ba26860fe7f61eaff7690f018398b3573086bd3.lua",
     "local_url": "./scripts/arizona-mobile-stream-chat-modded-v1-5.lua",
     "color": "#38bdf8",
-    "command": "/arizona-"
+    "command": "/arizona-",
+    "image": "./images/arizona-mobile-stream-chat-modded-v1-5.jpg"
   },
   {
     "id": "mushroom-render",
@@ -418,7 +451,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/e194955c5d2557d34e6bee6e23f3276f1a9cf11142e991ac52f433fe88a6c84c.lua",
     "local_url": "./scripts/mushroom-render.lua",
     "color": "#38bdf8",
-    "command": "/mushroom"
+    "command": "/mushroom",
+    "image": "./images/mushroom-render.jpg"
   },
   {
     "id": "payday-notifier-napominanie-o-payday",
@@ -430,7 +464,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/289/11517173e810ae2895a76070556984e3aa103594a723e39cac7af2086da3083e.lua",
     "local_url": "./scripts/payday-notifier-napominanie-o-payday.lua",
     "color": "#38bdf8",
-    "command": "/payday-n"
+    "command": "/payday-n",
+    "image": "./images/payday-notifier-napominanie-o-payday.png"
   },
   {
     "id": "anti-kovsh",
@@ -442,7 +477,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/4a81c5fe98344c1f66c7336ae59302b4ed395f7d55bd2c55dac85430c9a75f3b.lua",
     "local_url": "./scripts/anti-kovsh.lua",
     "color": "#38bdf8",
-    "command": "/anti-kov"
+    "command": "/anti-kov",
+    "image": "./images/anti-kovsh.jpg"
   },
   {
     "id": "visual-gm-car",
@@ -454,7 +490,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/b59daf2b59db5f61cd7f81f90c5b1f95e4e9d4d1ac94120a4f95e01c5d74cad8.lua",
     "local_url": "./scripts/visual-gm-car.lua",
     "color": "#38bdf8",
-    "command": "/visual-g"
+    "command": "/visual-g",
+    "image": "./images/visual-gm-car.jpg"
   },
   {
     "id": "beloe-hp-i-armour",
@@ -466,7 +503,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/3856/7e68deb65cae300fd6d3005e3e6bbdc9d63fc2ce607f6cf2ab47986845580772.lua",
     "local_url": "./scripts/beloe-hp-i-armour.lua",
     "color": "#38bdf8",
-    "command": "/beloe-hp"
+    "command": "/beloe-hp",
+    "image": "./images/beloe-hp-i-armour.jpg"
   },
   {
     "id": "vconline",
@@ -478,7 +516,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/3666/06e61351b35f80ecb8b482cb6017fecd8f2156b28ae876282eb6b71f6d6016d6.lua",
     "local_url": "./scripts/vconline.lua",
     "color": "#38bdf8",
-    "command": "/vconline"
+    "command": "/vconline",
+    "image": "./images/vconline.jpg"
   },
   {
     "id": "skrytie-drift-interfeysa",
@@ -490,7 +529,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/2afc1e59e6bb141b08c57de9953625cf0c74c3bdec6f1cb8c03112f04435a83f.lua",
     "local_url": "./scripts/skrytie-drift-interfeysa.lua",
     "color": "#38bdf8",
-    "command": "/skrytie-"
+    "command": "/skrytie-",
+    "image": "./images/skrytie-drift-interfeysa.jpg"
   },
   {
     "id": "handling-editor",
@@ -502,7 +542,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/2825/d76c40a871655cef9964e98229e681e8d9e042db6d908b4f40c86019eedca047.lua",
     "local_url": "./scripts/handling-editor.lua",
     "color": "#38bdf8",
-    "command": "/handling"
+    "command": "/handling",
+    "image": "./images/handling-editor.jpg"
   },
   {
     "id": "hudmoneyfix",
@@ -514,7 +555,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/1a78d3be33a3a3e1aa6b86fedcb53e292b1901e06cde74ed47aacff2244d0a1b.lua",
     "local_url": "./scripts/hudmoneyfix.lua",
     "color": "#38bdf8",
-    "command": "/hudmoney"
+    "command": "/hudmoney",
+    "image": "./images/hudmoneyfix.jpg"
   },
   {
     "id": "dronecam-arizona-rodina-mobile",
@@ -526,7 +568,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1686/1988bf00ff291cebd2f32de5175716f568abf264ac1e0f548dd6724783be6a52.lua",
     "local_url": "./scripts/dronecam-arizona-rodina-mobile.lua",
     "color": "#38bdf8",
-    "command": "/dronecam"
+    "command": "/dronecam",
+    "image": "./images/dronecam-arizona-rodina-mobile.jpg"
   },
   {
     "id": "visual-skins",
@@ -538,7 +581,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1686/d703f8562850c19b44397042d09915907b89ba2cd4d14fb41dc57b65c00fa5a0.lua",
     "local_url": "./scripts/visual-skins.lua",
     "color": "#38bdf8",
-    "command": "/visual-s"
+    "command": "/visual-s",
+    "image": "./images/visual-skins.png"
   },
   {
     "id": "bar-helper",
@@ -550,7 +594,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1860/ec76eebb23b4854bcab78e484b474e80044211dafa228a1ed26d500aa897869e.lua",
     "local_url": "./scripts/bar-helper.lua",
     "color": "#38bdf8",
-    "command": "/bar-help"
+    "command": "/bar-help",
+    "image": "./images/bar-helper.png"
   },
   {
     "id": "chat-mentiosv2-lua",
@@ -562,7 +607,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/d5469471e6bf6fb81c5071c06273c1be0b78eaa168441e06bb118da9e395326c.lua",
     "local_url": "./scripts/chat-mentiosv2-lua.lua",
     "color": "#38bdf8",
-    "command": "/chat-men"
+    "command": "/chat-men",
+    "image": "./images/chat-mentiosv2-lua.jpg"
   },
   {
     "id": "beg-druida-i-drugie-sety",
@@ -574,7 +620,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/252/253f1f883bb580111de40896d2da44dcba3ae05d60b35b11d727a206484cc951.lua",
     "local_url": "./scripts/beg-druida-i-drugie-sety.lua",
     "color": "#38bdf8",
-    "command": "/beg-drui"
+    "command": "/beg-drui",
+    "image": "./images/beg-druida-i-drugie-sety.jpg"
   },
   {
     "id": "spotify-arizona-rodina-mobile",
@@ -586,7 +633,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/617c3f4bb35d586d88397fbae7eee7b4d6cbc38b87d1603d884986958e59002e.lua",
     "local_url": "./scripts/spotify-arizona-rodina-mobile.lua",
     "color": "#38bdf8",
-    "command": "/spotify-"
+    "command": "/spotify-",
+    "image": "./images/spotify-arizona-rodina-mobile.jpg"
   },
   {
     "id": "autostyle-2",
@@ -598,7 +646,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/ae08541760ad6b3316fcdb826f4af267ac54dea74129c39833f391b41033cf56.lua",
     "local_url": "./scripts/autostyle-2.lua",
     "color": "#38bdf8",
-    "command": "/autostyl"
+    "command": "/autostyl",
+    "image": "./images/autostyle-2.jpg"
   },
   {
     "id": "renderobjects-esp-obektov-po-model-id",
@@ -610,7 +659,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4/46845909248a14220e1eedf6085d41618d9254029d8c723b4278ad25cb0c20d0.lua",
     "local_url": "./scripts/renderobjects-esp-obektov-po-model-id.lua",
     "color": "#38bdf8",
-    "command": "/renderob"
+    "command": "/renderob",
+    "image": "./images/renderobjects-esp-obektov-po-model-id.jpg"
   },
   {
     "id": "server-time",
@@ -622,7 +672,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1636/68086e96cef6b636d264ee7a3766324e12d503a1493f54000353e110f3b0b14c.lua",
     "local_url": "./scripts/server-time.lua",
     "color": "#ff6a3d",
-    "command": "/server-t"
+    "command": "/server-t",
+    "image": "./images/server-time.jpg"
   },
   {
     "id": "smena-pogody-na-rodina-rp",
@@ -634,7 +685,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1527/447b467ccce71a62c90975efdefe8f96fedc7601498f7fc491b58fe101f74ba0.lua",
     "local_url": "./scripts/smena-pogody-na-rodina-rp.lua",
     "color": "#38bdf8",
-    "command": "/smena-po"
+    "command": "/smena-po",
+    "image": "./images/smena-pogody-na-rodina-rp.jpg"
   },
   {
     "id": "mine-tools-arizona-mobile",
@@ -646,7 +698,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1686/48644e70d4c5ac3331a911be8edf18bf60db40092a887a891f319bb4638a7715.lua",
     "local_url": "./scripts/mine-tools-arizona-mobile.lua",
     "color": "#38bdf8",
-    "command": "/mine-too"
+    "command": "/mine-too",
+    "image": "./images/mine-tools-arizona-mobile.jpg"
   },
   {
     "id": "fake-death",
@@ -658,7 +711,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/4c65e4a0950de8692d3bb7c9fd05c745b23d3f81b08c1e445fd3dd02d6be81ee.lua",
     "local_url": "./scripts/fake-death.lua",
     "color": "#38bdf8",
-    "command": "/fake-dea"
+    "command": "/fake-dea",
+    "image": "./images/fake-death.png"
   },
   {
     "id": "avto-piar-rodina-arizona",
@@ -670,7 +724,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/252/ae3ef088a7047d5df68b5cf3893390c3db4c71d3e640aa8e8b11ae50e49cdc38.lua",
     "local_url": "./scripts/avto-piar-rodina-arizona.lua",
     "color": "#38bdf8",
-    "command": "/avto-pia"
+    "command": "/avto-pia",
+    "image": "./images/avto-piar-rodina-arizona.png"
   },
   {
     "id": "truck-helper-free-pomoschnik-dalnoboyschika-dlya-monetloader",
@@ -682,7 +737,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/2d841e99ddbd2acb36d64a78b9c88ae4afb52264cfa07880091dae0902b1517c.lua",
     "local_url": "./scripts/truck-helper-free-pomoschnik-dalnoboyschika-dlya-monetloader.lua",
     "color": "#38bdf8",
-    "command": "/truck-he"
+    "command": "/truck-he",
+    "image": "./images/truck-helper-free-pomoschnik-dalnoboyschika-dlya-monetloader.jpg"
   },
   {
     "id": "objectmenu-free-menedzher-obektov-dlya-monetloader",
@@ -694,7 +750,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/25763aaa1027d5a16b39c2fe1c63b095e37ce07ee488a1eee6007d73653d12f7.lua",
     "local_url": "./scripts/objectmenu-free-menedzher-obektov-dlya-monetloader.lua",
     "color": "#38bdf8",
-    "command": "/objectme"
+    "command": "/objectme",
+    "image": "./images/objectmenu-free-menedzher-obektov-dlya-monetloader.jpg"
   },
   {
     "id": "tform-transformatsiya-anti-carskill",
@@ -706,7 +763,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/cf5058c657b45eaa285560db12089a4dd9a3e1d851f4ad6cdf1836c2770cf3d1.lua",
     "local_url": "./scripts/tform-transformatsiya-anti-carskill.lua",
     "color": "#38bdf8",
-    "command": "/tform-tr"
+    "command": "/tform-tr",
+    "image": "./images/tform-transformatsiya-anti-carskill.jpg"
   },
   {
     "id": "beg-cj",
@@ -718,7 +776,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/c9c1cefc809fe24de4ff910f4bb95dafb962188bdbab00608344dd56c0788ed7.lua",
     "local_url": "./scripts/beg-cj.lua",
     "color": "#38bdf8",
-    "command": "/beg-cj"
+    "command": "/beg-cj",
+    "image": "./images/beg-cj.jpg"
   },
   {
     "id": "autoheal-2",
@@ -730,7 +789,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/9e1676ccfe8e2a73f961feb3c0bb14f3d690591ee13c631a50d917ecc4011a5e.lua",
     "local_url": "./scripts/autoheal-2.lua",
     "color": "#38bdf8",
-    "command": "/autoheal"
+    "command": "/autoheal",
+    "image": "./images/autoheal-2.jpg"
   },
   {
     "id": "porty-cleaner-fps-up",
@@ -742,7 +802,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1737/7cbf653beb6a1378456129abf06baefdaf6ad5fd35c6c23045bace31b3cf0732.lua",
     "local_url": "./scripts/porty-cleaner-fps-up.lua",
     "color": "#ff6a3d",
-    "command": "/porty-cl"
+    "command": "/porty-cl",
+    "image": "./images/porty-cleaner-fps-up.jpg"
   },
   {
     "id": "fastmap-karta-bystraya-karta-bez-esc",
@@ -754,7 +815,8 @@
     "download_url": "https://drive.google.com/drive/folders/1RsQ65cis1egTzHU0vb7ms1MCeDpQk6Y-",
     "local_url": "./scripts/fastmap-karta-bystraya-karta-bez-esc.lua",
     "color": "#38bdf8",
-    "command": "/fastmap-"
+    "command": "/fastmap-",
+    "image": "./images/fastmap-karta-bystraya-karta-bez-esc.png"
   },
   {
     "id": "skipnotify",
@@ -766,7 +828,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1636/c1853c62c755c532de1525b3f58b88ce711350ac4f529b5f255ad0db3fa3a735.lua",
     "local_url": "./scripts/skipnotify.lua",
     "color": "#38bdf8",
-    "command": "/skipnoti"
+    "command": "/skipnoti",
+    "image": "./images/skipnotify.jpg"
   },
   {
     "id": "market-helper",
@@ -778,7 +841,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1555/5306325412b50f8521adaa5d39c24c638c9e1c595a2755cb5115b4cb421aa8e5.lua",
     "local_url": "./scripts/market-helper.lua",
     "color": "#38bdf8",
-    "command": "/market-h"
+    "command": "/market-h",
+    "image": "./images/market-helper.jpg"
   },
   {
     "id": "vh-na-olen",
@@ -790,7 +854,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/521/e007e3a6fbd80f23e2570253a7bc41a2ab4c81d1faf9a78c78ff55e147015995.luax",
     "local_url": "./scripts/vh-na-olen.luax",
     "color": "#38bdf8",
-    "command": "/vh-na-ol"
+    "command": "/vh-na-ol",
+    "image": "./images/vh-na-olen.jpg"
   },
   {
     "id": "damage-informer",
@@ -802,7 +867,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/253/74f68d1ffe2ff59b9559edecaa2872ce17ca682927b8b7c5258385a413efabd8.lua",
     "local_url": "./scripts/damage-informer.lua",
     "color": "#38bdf8",
-    "command": "/damage-i"
+    "command": "/damage-i",
+    "image": "./images/damage-informer.jpg"
   },
   {
     "id": "avto-oplata-nalogov",
@@ -814,7 +880,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/18da9df56ef083d7c624a307832a5c2a53b2d686af712fd3dc438e0830558087.lua",
     "local_url": "./scripts/avto-oplata-nalogov.lua",
     "color": "#38bdf8",
-    "command": "/avto-opl"
+    "command": "/avto-opl",
+    "image": "./images/avto-oplata-nalogov.jpg"
   },
   {
     "id": "oilhelpermobile",
@@ -826,7 +893,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1202/b9a98247d79b6ade75197c261b79901cf5775950412417313c4742c2bb1a8c4d.lua",
     "local_url": "./scripts/oilhelpermobile.lua",
     "color": "#38bdf8",
-    "command": "/oilhelpe"
+    "command": "/oilhelpe",
+    "image": "./images/oilhelpermobile.jpg"
   },
   {
     "id": "multitul-beta",
@@ -838,7 +906,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/209/acc43c99e4cd08a16551ecef2afbe893c4b54977776074c040cd9e0718c5a520.lua",
     "local_url": "./scripts/multitul-beta.lua",
     "color": "#38bdf8",
-    "command": "/multitul"
+    "command": "/multitul",
+    "image": "./images/multitul-beta.jpg"
   },
   {
     "id": "zametki",
@@ -850,7 +919,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/209/860c7d240b7cea0a7574ec6849310afb0c7ed390570d6c14b83b6d9e5a7d8786.lua",
     "local_url": "./scripts/zametki.lua",
     "color": "#38bdf8",
-    "command": "/zametki"
+    "command": "/zametki",
+    "image": "./images/zametki.jpg"
   },
   {
     "id": "bystryy-vyhod-s-rieltorki",
@@ -862,7 +932,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/5732796ef2f15ae9b25905c80a1caf043e91abb52b1c106d109a9ec92a3b2e29.lua",
     "local_url": "./scripts/bystryy-vyhod-s-rieltorki.lua",
     "color": "#38bdf8",
-    "command": "/bystryy-"
+    "command": "/bystryy-",
+    "image": "./images/bystryy-vyhod-s-rieltorki.png"
   },
   {
     "id": "oilhelper-helper-dlya-nefti",
@@ -874,7 +945,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/fc1df80ed5c0db41606036b12e5288295ca5817f1bdac5f3edf6466c4801b807.lua",
     "local_url": "./scripts/oilhelper-helper-dlya-nefti.lua",
     "color": "#38bdf8",
-    "command": "/oilhelpe"
+    "command": "/oilhelpe",
+    "image": "./images/oilhelper-helper-dlya-nefti.png"
   },
   {
     "id": "kalkulyator-depozita",
@@ -886,7 +958,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/8/4508a38f9a42b6814f8fa5c0e4ae74400b684707f39dcd55f002bb86230064a9.lua",
     "local_url": "./scripts/kalkulyator-depozita.lua",
     "color": "#38bdf8",
-    "command": "/kalkulya"
+    "command": "/kalkulya",
+    "image": "./images/kalkulyator-depozita.png"
   },
   {
     "id": "chatcopy-logv2",
@@ -898,7 +971,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/52708d8079d8651bea3f633dea206df479cee303a73c94489aae428a9351e0b6.lua",
     "local_url": "./scripts/chatcopy-logv2.lua",
     "color": "#38bdf8",
-    "command": "/chatcopy"
+    "command": "/chatcopy",
+    "image": "./images/chatcopy-logv2.jpg"
   },
   {
     "id": "mining-tool-by-mister-sand",
@@ -910,7 +984,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/3c37565b3183eeff2cee9cbca65a16848e411b706da066ef669114f3a640181f.lua",
     "local_url": "./scripts/mining-tool-by-mister-sand.lua",
     "color": "#38bdf8",
-    "command": "/mining-t"
+    "command": "/mining-t",
+    "image": "./images/mining-tool-by-mister-sand.jpg"
   },
   {
     "id": "watermark",
@@ -922,7 +997,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/856/7e39f856c61855e2763a1b6cf51d350a224877a972af730096d18dc3c1523168.lua",
     "local_url": "./scripts/watermark.lua",
     "color": "#38bdf8",
-    "command": "/watermar"
+    "command": "/watermar",
+    "image": "./images/watermark.jpg"
   },
   {
     "id": "autoopenroulettev2",
@@ -934,7 +1010,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/549fd19f7506cc2855dbbbf58775f6774e197036bdf6a1611e19c0e9d92840c3.lua",
     "local_url": "./scripts/autoopenroulettev2.lua",
     "color": "#38bdf8",
-    "command": "/autoopen"
+    "command": "/autoopen",
+    "image": "./images/autoopenroulettev2.jpg"
   },
   {
     "id": "avtomaticheskiy-beg",
@@ -946,7 +1023,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1048/04c50e0dd735e24cb255203f3576dc065bf6e1a158c6cbe767cce2474f22ed87.lua",
     "local_url": "./scripts/avtomaticheskiy-beg.lua",
     "color": "#38bdf8",
-    "command": "/avtomati"
+    "command": "/avtomati",
+    "image": "./images/avtomaticheskiy-beg.jpg"
   },
   {
     "id": "fastmap",
@@ -958,7 +1036,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/69bc36b596453_map.zip",
     "local_url": "./scripts/fastmap.zip",
     "color": "#38bdf8",
-    "command": "/fastmap"
+    "command": "/fastmap",
+    "image": "./images/fastmap.jpg"
   },
   {
     "id": "skrytie-hud-i-chata",
@@ -970,7 +1049,8 @@
     "download_url": "https://alexgravitos.neocities.org/arizona/scripts/f7.lua",
     "local_url": "./scripts/skrytie-hud-i-chata.lua",
     "color": "#38bdf8",
-    "command": "/skrytie-"
+    "command": "/skrytie-",
+    "image": "./images/skrytie-hud-i-chata.png"
   },
   {
     "id": "bettergps",
@@ -982,7 +1062,8 @@
     "download_url": "https://alexgravitos.neocities.org/arizona/scripts/BetterGPS.lua",
     "local_url": "./scripts/bettergps.lua",
     "color": "#38bdf8",
-    "command": "/bettergp"
+    "command": "/bettergp",
+    "image": "./images/bettergps.png"
   },
   {
     "id": "marketplace-mobile",
@@ -994,7 +1075,8 @@
     "download_url": "https://alexgravitos.neocities.org/arizona/scripts/marketplace_mobile.lua",
     "local_url": "./scripts/marketplace-mobile.lua",
     "color": "#38bdf8",
-    "command": "/marketpl"
+    "command": "/marketpl",
+    "image": "./images/marketplace-mobile.png"
   },
   {
     "id": "watermark-beta",
@@ -1006,7 +1088,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/69afceec7a1d2_Watermark.lua",
     "local_url": "./scripts/watermark-beta.lua",
     "color": "#38bdf8",
-    "command": "/watermar"
+    "command": "/watermar",
+    "image": "./images/watermark-beta.jpg"
   },
   {
     "id": "button-creator",
@@ -1018,7 +1101,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1555/0efdc17fae4f16f412c02816c6a6286a154930c58280b3e418525659e16a55af.lua",
     "local_url": "./scripts/button-creator.lua",
     "color": "#10b981",
-    "command": "/button-c"
+    "command": "/button-c",
+    "image": "./images/button-creator.jpg"
   },
   {
     "id": "widget-editor",
@@ -1030,7 +1114,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/69adbb744aeca_widget_editor.lua",
     "local_url": "./scripts/widget-editor.lua",
     "color": "#10b981",
-    "command": "/widget-e"
+    "command": "/widget-e",
+    "image": "./images/widget-editor.jpg"
   },
   {
     "id": "ochistka-chata",
@@ -1042,7 +1127,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/4/69a4222cc7502_%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0%20%D1%87%D0%B0%D1%82%D0%B0.lua",
     "local_url": "./scripts/ochistka-chata.lua",
     "color": "#38bdf8",
-    "command": "/ochistka"
+    "command": "/ochistka",
+    "image": "./images/ochistka-chata.jpg"
   },
   {
     "id": "web-mobile",
@@ -1054,7 +1140,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/69a0aefeba051_WebMobile.lua",
     "local_url": "./scripts/web-mobile.lua",
     "color": "#38bdf8",
-    "command": "/web-mobi"
+    "command": "/web-mobi",
+    "image": "./images/web-mobile.jpg"
   },
   {
     "id": "cef-mobile",
@@ -1066,7 +1153,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/5232ff17a01c1d73daa21695691aba01fa136d7a4d42d9e95fbcfd660a5dc087.lua",
     "local_url": "./scripts/cef-mobile.lua",
     "color": "#38bdf8",
-    "command": "/cef-mobi"
+    "command": "/cef-mobi",
+    "image": "./images/cef-mobile.jpg"
   },
   {
     "id": "autoeat-2",
@@ -1078,7 +1166,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/13/697baf8102957_AutoEat%20by%20Theopka.lua",
     "local_url": "./scripts/autoeat-2.lua",
     "color": "#38bdf8",
-    "command": "/autoeat-"
+    "command": "/autoeat-",
+    "image": "./images/autoeat-2.png"
   },
   {
     "id": "screen-helper",
@@ -1090,7 +1179,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/scripts/helpers/ScreenHelper.lua",
     "local_url": "./scripts/screen-helper.lua",
     "color": "#38bdf8",
-    "command": "/screen-h"
+    "command": "/screen-h",
+    "image": "./images/screen-helper.png"
   },
   {
     "id": "mediacenter",
@@ -1102,7 +1192,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/scripts/helpers/MediaCenter.lua",
     "local_url": "./scripts/mediacenter.lua",
     "color": "#38bdf8",
-    "command": "/mediacen"
+    "command": "/mediacen",
+    "image": "./images/mediacenter.png"
   },
   {
     "id": "salary",
@@ -1114,7 +1205,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/scripts/helpers/SalaryPort.lua",
     "local_url": "./scripts/salary.lua",
     "color": "#38bdf8",
-    "command": "/salary"
+    "command": "/salary",
+    "image": "./images/salary.png"
   },
   {
     "id": "click-warp",
@@ -1126,7 +1218,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/scripts/helpers/ClickWarp.lua",
     "local_url": "./scripts/click-warp.lua",
     "color": "#38bdf8",
-    "command": "/click-wa"
+    "command": "/click-wa",
+    "image": "./images/click-warp.jpg"
   },
   {
     "id": "smi-helper",
@@ -1138,7 +1231,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/scripts/helpers/smi.lua",
     "local_url": "./scripts/smi-helper.lua",
     "color": "#38bdf8",
-    "command": "/smi-help"
+    "command": "/smi-help",
+    "image": "./images/smi-helper.png"
   },
   {
     "id": "captchatraining",
@@ -1150,7 +1244,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/scripts/helpers/Captcha.lua",
     "local_url": "./scripts/captchatraining.lua",
     "color": "#38bdf8",
-    "command": "/captchat"
+    "command": "/captchat",
+    "image": "./images/captchatraining.png"
   },
   {
     "id": "deposite-calculator",
@@ -1162,7 +1257,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/DepositeCalculator.lua",
     "local_url": "./scripts/deposite-calculator.lua",
     "color": "#38bdf8",
-    "command": "/deposite"
+    "command": "/deposite",
+    "image": "./images/deposite-calculator.png"
   },
   {
     "id": "mvd-helper",
@@ -1174,7 +1270,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/MVDHELPERKRYTOI.zip",
     "local_url": "./scripts/mvd-helper.zip",
     "color": "#38bdf8",
-    "command": "/mvd-help"
+    "command": "/mvd-help",
+    "image": ""
   },
   {
     "id": "anti-rvanka",
@@ -1186,7 +1283,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Anti%20Rvanka.lua",
     "local_url": "./scripts/anti-rvanka.lua",
     "color": "#38bdf8",
-    "command": "/anti-rva"
+    "command": "/anti-rva",
+    "image": ""
   },
   {
     "id": "stream-chat",
@@ -1198,7 +1296,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/StreamChat.lua",
     "local_url": "./scripts/stream-chat.lua",
     "color": "#38bdf8",
-    "command": "/stream-c"
+    "command": "/stream-c",
+    "image": ""
   },
   {
     "id": "fade-screen-effekt",
@@ -1210,7 +1309,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/FadeScreen%20%281%29.lua",
     "local_url": "./scripts/fade-screen-effekt.lua",
     "color": "#38bdf8",
-    "command": "/fade-scr"
+    "command": "/fade-scr",
+    "image": "./images/fade-screen-effekt.png"
   },
   {
     "id": "skin-changer",
@@ -1222,7 +1322,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Fskin%202.0.lua",
     "local_url": "./scripts/skin-changer.lua",
     "color": "#38bdf8",
-    "command": "/skin-cha"
+    "command": "/skin-cha",
+    "image": "./images/skin-changer.png"
   },
   {
     "id": "hp-bar",
@@ -1234,7 +1335,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/HP_bar.lua",
     "local_url": "./scripts/hp-bar.lua",
     "color": "#38bdf8",
-    "command": "/hp-bar"
+    "command": "/hp-bar",
+    "image": "./images/hp-bar.png"
   },
   {
     "id": "auto-invite",
@@ -1246,7 +1348,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/autoinv.lua",
     "local_url": "./scripts/auto-invite.lua",
     "color": "#38bdf8",
-    "command": "/auto-inv"
+    "command": "/auto-inv",
+    "image": "./images/auto-invite.png"
   },
   {
     "id": "airbrake",
@@ -1258,7 +1361,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AirBrake.lua",
     "local_url": "./scripts/airbrake.lua",
     "color": "#38bdf8",
-    "command": "/airbrake"
+    "command": "/airbrake",
+    "image": "./images/airbrake.png"
   },
   {
     "id": "teleport",
@@ -1270,7 +1374,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/RTeleport%203.1-fix.luac",
     "local_url": "./scripts/teleport.luac",
     "color": "#38bdf8",
-    "command": "/teleport"
+    "command": "/teleport",
+    "image": "./images/teleport.png"
   },
   {
     "id": "rybiy-glaz-fov",
@@ -1282,7 +1387,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/FOV.lua",
     "local_url": "./scripts/rybiy-glaz-fov.lua",
     "color": "#38bdf8",
-    "command": "/rybiy-gl"
+    "command": "/rybiy-gl",
+    "image": "./images/rybiy-glaz-fov.png"
   },
   {
     "id": "koliziya",
@@ -1294,7 +1400,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/collision2.lua",
     "local_url": "./scripts/koliziya.lua",
     "color": "#38bdf8",
-    "command": "/koliziya"
+    "command": "/koliziya",
+    "image": "./images/koliziya.png"
   },
   {
     "id": "kill",
@@ -1306,7 +1413,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/%2Bkill.lua",
     "local_url": "./scripts/kill.lua",
     "color": "#38bdf8",
-    "command": "/kill"
+    "command": "/kill",
+    "image": "./images/kill.png"
   },
   {
     "id": "piss",
@@ -1318,7 +1426,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/piss.lua",
     "local_url": "./scripts/piss.lua",
     "color": "#38bdf8",
-    "command": "/piss"
+    "command": "/piss",
+    "image": "./images/piss.png"
   },
   {
     "id": "auto-lock",
@@ -1330,7 +1439,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AutoCar.lua",
     "local_url": "./scripts/auto-lock.lua",
     "color": "#38bdf8",
-    "command": "/auto-loc"
+    "command": "/auto-loc",
+    "image": "./images/auto-lock.png"
   },
   {
     "id": "flooder",
@@ -1342,7 +1452,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Flooder.lua",
     "local_url": "./scripts/flooder.lua",
     "color": "#38bdf8",
-    "command": "/flooder"
+    "command": "/flooder",
+    "image": "./images/flooder.png"
   },
   {
     "id": "monetbinder",
@@ -1354,7 +1465,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/MonetBinder_v1.0.1.lua",
     "local_url": "./scripts/monetbinder.lua",
     "color": "#38bdf8",
-    "command": "/monetbin"
+    "command": "/monetbin",
+    "image": "./images/monetbinder.png"
   },
   {
     "id": "kbullertracers",
@@ -1366,7 +1478,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/KBulletTracers-1.1.lua",
     "local_url": "./scripts/kbullertracers.lua",
     "color": "#38bdf8",
-    "command": "/kbullert"
+    "command": "/kbullert",
+    "image": "./images/kbullertracers.png"
   },
   {
     "id": "answers-klads",
@@ -1378,7 +1491,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/anskladfix.lua",
     "local_url": "./scripts/answers-klads.lua",
     "color": "#38bdf8",
-    "command": "/answers-"
+    "command": "/answers-",
+    "image": "./images/answers-klads.png"
   },
   {
     "id": "money-serperator",
@@ -1390,7 +1504,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/MoneySeparator_v4.lua",
     "local_url": "./scripts/money-serperator.lua",
     "color": "#38bdf8",
-    "command": "/money-se"
+    "command": "/money-se",
+    "image": "./images/money-serperator.png"
   },
   {
     "id": "zvonok-po-aydi",
@@ -1402,7 +1517,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/call%20id.lua",
     "local_url": "./scripts/zvonok-po-aydi.lua",
     "color": "#38bdf8",
-    "command": "/zvonok-p"
+    "command": "/zvonok-p",
+    "image": "./images/zvonok-po-aydi.png"
   },
   {
     "id": "fps-up-lua",
@@ -1414,7 +1530,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/fps-up-lua.zip",
     "local_url": "./scripts/fps-up-lua.zip",
     "color": "#ff6a3d",
-    "command": "/fps-up-l"
+    "command": "/fps-up-l",
+    "image": "./images/fps-up-lua.png"
   },
   {
     "id": "fun-helper",
@@ -1426,7 +1543,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Fun%20Helper%20V1.1.luac",
     "local_url": "./scripts/fun-helper.luac",
     "color": "#38bdf8",
-    "command": "/fun-help"
+    "command": "/fun-help",
+    "image": "./images/fun-helper.png"
   },
   {
     "id": "central-helper",
@@ -1438,7 +1556,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Helper.zip",
     "local_url": "./scripts/central-helper.zip",
     "color": "#38bdf8",
-    "command": "/central-"
+    "command": "/central-",
+    "image": "./images/central-helper.png"
   },
   {
     "id": "oil-helper",
@@ -1450,7 +1569,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Oil%20Helper%20%202.0.0.lua",
     "local_url": "./scripts/oil-helper.lua",
     "color": "#38bdf8",
-    "command": "/oil-help"
+    "command": "/oil-help",
+    "image": "./images/oil-helper.png"
   },
   {
     "id": "pilot-helper",
@@ -1462,7 +1582,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Pilot%20Tools%201.0.2.lua",
     "local_url": "./scripts/pilot-helper.lua",
     "color": "#38bdf8",
-    "command": "/pilot-he"
+    "command": "/pilot-he",
+    "image": "./images/pilot-helper.png"
   },
   {
     "id": "stroboskopy",
@@ -1474,7 +1595,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Straboscopes%20by%20lua_helpers.lua",
     "local_url": "./scripts/stroboskopy.lua",
     "color": "#38bdf8",
-    "command": "/strobosk"
+    "command": "/strobosk",
+    "image": "./images/stroboskopy.png"
   },
   {
     "id": "antiblockedplayer",
@@ -1486,7 +1608,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Anti.lua",
     "local_url": "./scripts/antiblockedplayer.lua",
     "color": "#38bdf8",
-    "command": "/antibloc"
+    "command": "/antibloc",
+    "image": "./images/antiblockedplayer.png"
   },
   {
     "id": "autofaminvite",
@@ -1498,7 +1621,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AutoFamInvite.lua",
     "local_url": "./scripts/autofaminvite.lua",
     "color": "#38bdf8",
-    "command": "/autofami"
+    "command": "/autofami",
+    "image": "./images/autofaminvite.png"
   },
   {
     "id": "izgib-skina",
@@ -1510,7 +1634,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/imba1.lua",
     "local_url": "./scripts/izgib-skina.lua",
     "color": "#38bdf8",
-    "command": "/izgib-sk"
+    "command": "/izgib-sk",
+    "image": "./images/izgib-skina.png"
   },
   {
     "id": "timeronline",
@@ -1522,7 +1647,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/TimerOnline1.1.lua",
     "local_url": "./scripts/timeronline.lua",
     "color": "#ff6a3d",
-    "command": "/timeronl"
+    "command": "/timeronl",
+    "image": "./images/timeronline.png"
   },
   {
     "id": "autodoor",
@@ -1534,7 +1660,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AutoDoor.lua",
     "local_url": "./scripts/autodoor.lua",
     "color": "#38bdf8",
-    "command": "/autodoor"
+    "command": "/autodoor",
+    "image": "./images/autodoor.png"
   },
   {
     "id": "quitinformer",
@@ -1546,7 +1673,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/quitinformer.lua",
     "local_url": "./scripts/quitinformer.lua",
     "color": "#38bdf8",
-    "command": "/quitinfo"
+    "command": "/quitinfo",
+    "image": "./images/quitinformer.png"
   },
   {
     "id": "autopilot",
@@ -1558,7 +1686,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/autopilot%20%281%29.lua",
     "local_url": "./scripts/autopilot.lua",
     "color": "#38bdf8",
-    "command": "/autopilo"
+    "command": "/autopilo",
+    "image": "./images/autopilot.png"
   },
   {
     "id": "boomcar",
@@ -1570,7 +1699,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Boom.lua",
     "local_url": "./scripts/boomcar.lua",
     "color": "#38bdf8",
-    "command": "/boomcar"
+    "command": "/boomcar",
+    "image": "./images/boomcar.png"
   },
   {
     "id": "altsync",
@@ -1582,7 +1712,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AltSync.lua",
     "local_url": "./scripts/altsync.lua",
     "color": "#38bdf8",
-    "command": "/altsync"
+    "command": "/altsync",
+    "image": "./images/altsync.png"
   },
   {
     "id": "freezer",
@@ -1594,7 +1725,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Freezer%20%281%29.lua",
     "local_url": "./scripts/freezer.lua",
     "color": "#38bdf8",
-    "command": "/freezer"
+    "command": "/freezer",
+    "image": "./images/freezer.png"
   },
   {
     "id": "moresettings",
@@ -1606,7 +1738,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/MoreSettings1.1.lua",
     "local_url": "./scripts/moresettings.lua",
     "color": "#38bdf8",
-    "command": "/moresett"
+    "command": "/moresett",
+    "image": "./images/moresettings.png"
   },
   {
     "id": "rollerfix",
@@ -1618,7 +1751,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/%21RollerFix.lua",
     "local_url": "./scripts/rollerfix.lua",
     "color": "#38bdf8",
-    "command": "/rollerfi"
+    "command": "/rollerfi",
+    "image": "./images/rollerfix.png"
   },
   {
     "id": "radius-lavki",
@@ -1630,7 +1764,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/RadiusLavki%203.0%20by%20Alex07.lua",
     "local_url": "./scripts/radius-lavki.lua",
     "color": "#38bdf8",
-    "command": "/radius-l"
+    "command": "/radius-l",
+    "image": "./images/radius-lavki.png"
   },
   {
     "id": "easyconnect",
@@ -1642,7 +1777,8 @@
     "download_url": "https://app.arzmod.com/lua4fun/user-uploads/files/EasyConnect%20plus%20by%20lua_helpers.zip",
     "local_url": "./scripts/easyconnect.zip",
     "color": "#38bdf8",
-    "command": "/easyconn"
+    "command": "/easyconn",
+    "image": "./images/easyconnect.png"
   },
   {
     "id": "drug-helper",
@@ -1654,7 +1790,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Drug_Helper.lua",
     "local_url": "./scripts/drug-helper.lua",
     "color": "#38bdf8",
-    "command": "/drug-hel"
+    "command": "/drug-hel",
+    "image": "./images/drug-helper.png"
   },
   {
     "id": "set-time",
@@ -1666,7 +1803,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/b1186140c0801d44c0f286579acf1f0add680f1a9f272543c7bff4319b3da637.lua",
     "local_url": "./scripts/set-time.lua",
     "color": "#ff6a3d",
-    "command": "/set-time"
+    "command": "/set-time",
+    "image": "./images/set-time.jpeg"
   },
   {
     "id": "trails",
@@ -1678,7 +1816,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/trailsmobile.lua",
     "local_url": "./scripts/trails.lua",
     "color": "#38bdf8",
-    "command": "/trails"
+    "command": "/trails",
+    "image": "./images/trails.png"
   },
   {
     "id": "kalkulyator",
@@ -1690,7 +1829,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/calc.lua",
     "local_url": "./scripts/kalkulyator.lua",
     "color": "#38bdf8",
-    "command": "/kalkulya"
+    "command": "/kalkulya",
+    "image": "./images/kalkulyator.png"
   },
   {
     "id": "bonus-tools-13-gg",
@@ -1702,7 +1842,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/admintools.zip",
     "local_url": "./scripts/bonus-tools-13-gg.zip",
     "color": "#38bdf8",
-    "command": "/bonus-to"
+    "command": "/bonus-to",
+    "image": "./images/bonus-tools-13-gg.png"
   },
   {
     "id": "cam-hack-v5",
@@ -1714,7 +1855,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/8/e56767c7ea63a52e0dde6c1c159d1996968e2907a77caf6e6dc9e0114b42a346.lua",
     "local_url": "./scripts/cam-hack-v5.lua",
     "color": "#38bdf8",
-    "command": "/cam-hack"
+    "command": "/cam-hack",
+    "image": "./images/cam-hack-v5.jpg"
   },
   {
     "id": "kolokol",
@@ -1726,7 +1868,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Kolokol%20by%20lua_helpers.lua",
     "local_url": "./scripts/kolokol.lua",
     "color": "#38bdf8",
-    "command": "/kolokol"
+    "command": "/kolokol",
+    "image": "./images/kolokol.png"
   },
   {
     "id": "online-timer",
@@ -1738,7 +1881,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/TimerOnline.lua",
     "local_url": "./scripts/online-timer.lua",
     "color": "#ff6a3d",
-    "command": "/online-t"
+    "command": "/online-t",
+    "image": "./images/online-timer.jpeg"
   },
   {
     "id": "arizona-notify",
@@ -1750,7 +1894,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Dino.lua",
     "local_url": "./scripts/arizona-notify.lua",
     "color": "#38bdf8",
-    "command": "/arizona-"
+    "command": "/arizona-",
+    "image": "./images/arizona-notify.jpeg"
   },
   {
     "id": "kill-sound",
@@ -1762,7 +1907,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/KillStream%20by%20_lil.starss.zip",
     "local_url": "./scripts/kill-sound.zip",
     "color": "#38bdf8",
-    "command": "/kill-sou"
+    "command": "/kill-sou",
+    "image": "./images/kill-sound.jpeg"
   },
   {
     "id": "buttons",
@@ -1774,7 +1920,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Window.lua",
     "local_url": "./scripts/buttons.lua",
     "color": "#10b981",
-    "command": "/buttons"
+    "command": "/buttons",
+    "image": "./images/buttons.jpeg"
   },
   {
     "id": "friends-checker",
@@ -1786,7 +1933,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/FChecker.lua",
     "local_url": "./scripts/friends-checker.lua",
     "color": "#38bdf8",
-    "command": "/friends-"
+    "command": "/friends-",
+    "image": "./images/friends-checker.jpeg"
   },
   {
     "id": "location-name",
@@ -1798,7 +1946,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/LocationName.lua",
     "local_url": "./scripts/location-name.lua",
     "color": "#38bdf8",
-    "command": "/location"
+    "command": "/location",
+    "image": "./images/location-name.jpg"
   },
   {
     "id": "autofill",
@@ -1810,7 +1959,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/69b825d8bb4a7_Autofill.lua",
     "local_url": "./scripts/autofill.lua",
     "color": "#38bdf8",
-    "command": "/autofill"
+    "command": "/autofill",
+    "image": "./images/autofill.jpg"
   },
   {
     "id": "axon-body-cam",
@@ -1822,7 +1972,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AxonBodyCam.lua",
     "local_url": "./scripts/axon-body-cam.lua",
     "color": "#38bdf8",
-    "command": "/axon-bod"
+    "command": "/axon-bod",
+    "image": "./images/axon-body-cam.jpeg"
   },
   {
     "id": "streamzone",
@@ -1834,7 +1985,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/StreamZone.lua",
     "local_url": "./scripts/streamzone.lua",
     "color": "#38bdf8",
-    "command": "/streamzo"
+    "command": "/streamzo",
+    "image": "./images/streamzone.png"
   },
   {
     "id": "fps-up",
@@ -1846,7 +1998,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/GovnokodFPSUp.lua",
     "local_url": "./scripts/fps-up.lua",
     "color": "#ff6a3d",
-    "command": "/fps-up"
+    "command": "/fps-up",
+    "image": "./images/fps-up.jpeg"
   },
   {
     "id": "telegram-logger",
@@ -1858,7 +2011,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/logger.lua",
     "local_url": "./scripts/telegram-logger.lua",
     "color": "#38bdf8",
-    "command": "/telegram"
+    "command": "/telegram",
+    "image": "./images/telegram-logger.jpeg"
   },
   {
     "id": "equip-object",
@@ -1870,7 +2024,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/object.lua",
     "local_url": "./scripts/equip-object.lua",
     "color": "#38bdf8",
-    "command": "/equip-ob"
+    "command": "/equip-ob",
+    "image": "./images/equip-object.jpeg"
   },
   {
     "id": "visual-delete-armour",
@@ -1882,7 +2037,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/bronik_by%40daniel_pon%20%281%29%20%281%29.lua",
     "local_url": "./scripts/visual-delete-armour.lua",
     "color": "#38bdf8",
-    "command": "/visual-d"
+    "command": "/visual-d",
+    "image": "./images/visual-delete-armour.jpeg"
   },
   {
     "id": "circlehealthbar",
@@ -1894,7 +2050,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/bar.lua",
     "local_url": "./scripts/circlehealthbar.lua",
     "color": "#38bdf8",
-    "command": "/circlehe"
+    "command": "/circlehe",
+    "image": "./images/circlehealthbar.jpeg"
   },
   {
     "id": "connect-tools",
@@ -1906,7 +2063,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/697f75d41be0d_ConnectTools.lua",
     "local_url": "./scripts/connect-tools.lua",
     "color": "#38bdf8",
-    "command": "/connect-"
+    "command": "/connect-",
+    "image": "./images/connect-tools.jpg"
   },
   {
     "id": "recon",
@@ -1918,7 +2076,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/recone.lua",
     "local_url": "./scripts/recon.lua",
     "color": "#38bdf8",
-    "command": "/recon"
+    "command": "/recon",
+    "image": "./images/recon.png"
   },
   {
     "id": "ghetto-helper",
@@ -1930,7 +2089,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/GHETTO%20HELPER%20LUA-SCRIPTER.lua",
     "local_url": "./scripts/ghetto-helper.lua",
     "color": "#38bdf8",
-    "command": "/ghetto-h"
+    "command": "/ghetto-h",
+    "image": "./images/ghetto-helper.png"
   },
   {
     "id": "action-buttons",
@@ -1942,7 +2102,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/69b825688f195_Action_Buttons.lua",
     "local_url": "./scripts/action-buttons.lua",
     "color": "#10b981",
-    "command": "/action-b"
+    "command": "/action-b",
+    "image": "./images/action-buttons.jpg"
   },
   {
     "id": "fastcall",
@@ -1954,7 +2115,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Fcall.lua",
     "local_url": "./scripts/fastcall.lua",
     "color": "#38bdf8",
-    "command": "/fastcall"
+    "command": "/fastcall",
+    "image": "./images/fastcall.jpg"
   },
   {
     "id": "autoform",
@@ -1966,7 +2128,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/NEW%20AFK%20Zarplata.lua",
     "local_url": "./scripts/autoform.lua",
     "color": "#38bdf8",
-    "command": "/autoform"
+    "command": "/autoform",
+    "image": "./images/autoform.png"
   },
   {
     "id": "auto-piar",
@@ -1978,7 +2141,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/autopiard.lua",
     "local_url": "./scripts/auto-piar.lua",
     "color": "#38bdf8",
-    "command": "/auto-pia"
+    "command": "/auto-pia",
+    "image": "./images/auto-piar.png"
   },
   {
     "id": "render-for-rodina-online",
@@ -1990,7 +2154,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Render.lua",
     "local_url": "./scripts/render-for-rodina-online.lua",
     "color": "#38bdf8",
-    "command": "/render-f"
+    "command": "/render-f",
+    "image": ""
   },
   {
     "id": "anti-dm",
@@ -2002,7 +2167,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/antidm.lua",
     "local_url": "./scripts/anti-dm.lua",
     "color": "#38bdf8",
-    "command": "/anti-dm"
+    "command": "/anti-dm",
+    "image": ""
   },
   {
     "id": "avto-eda-vip",
@@ -2014,7 +2180,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AutoEat%20by%20lua_helpers.lua",
     "local_url": "./scripts/avto-eda-vip.lua",
     "color": "#38bdf8",
-    "command": "/avto-eda"
+    "command": "/avto-eda",
+    "image": ""
   },
   {
     "id": "getup",
@@ -2026,7 +2193,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/getUp%20%28new%29.lua",
     "local_url": "./scripts/getup.lua",
     "color": "#38bdf8",
-    "command": "/getup"
+    "command": "/getup",
+    "image": ""
   },
   {
     "id": "family-helper",
@@ -2038,7 +2206,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Family%20Helper%20-%20KJ%20mods.lua",
     "local_url": "./scripts/family-helper.lua",
     "color": "#38bdf8",
-    "command": "/family-h"
+    "command": "/family-h",
+    "image": ""
   },
   {
     "id": "mimgui-dialog",
@@ -2050,7 +2219,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Mimgui%20Dialog.lua",
     "local_url": "./scripts/mimgui-dialog.lua",
     "color": "#38bdf8",
-    "command": "/mimgui-d"
+    "command": "/mimgui-d",
+    "image": ""
   },
   {
     "id": "vatermark-skript",
@@ -2062,7 +2232,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/watermarks_v1.0.3.lua",
     "local_url": "./scripts/vatermark-skript.lua",
     "color": "#38bdf8",
-    "command": "/vatermar"
+    "command": "/vatermar",
+    "image": ""
   },
   {
     "id": "mentions",
@@ -2074,7 +2245,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/mentions.lua",
     "local_url": "./scripts/mentions.lua",
     "color": "#38bdf8",
-    "command": "/mentions"
+    "command": "/mentions",
+    "image": ""
   },
   {
     "id": "fix-alt-buttons",
@@ -2086,7 +2258,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/699b12a4cfcf8_ffbutton.lua",
     "local_url": "./scripts/fix-alt-buttons.lua",
     "color": "#10b981",
-    "command": "/fix-alt-"
+    "command": "/fix-alt-",
+    "image": ""
   },
   {
     "id": "anti-rvanka-arzfun",
@@ -2098,7 +2271,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AntiRvanka.luac",
     "local_url": "./scripts/anti-rvanka-arzfun.luac",
     "color": "#38bdf8",
-    "command": "/anti-rva"
+    "command": "/anti-rva",
+    "image": ""
   },
   {
     "id": "smi-helper-3-00",
@@ -2110,7 +2284,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/smihelp300.lua",
     "local_url": "./scripts/smi-helper-3-00.lua",
     "color": "#38bdf8",
-    "command": "/smi-help"
+    "command": "/smi-help",
+    "image": ""
   },
   {
     "id": "interaction-crutch",
@@ -2122,7 +2297,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/69b8263fc18ff_Interaction_Crutch.lua",
     "local_url": "./scripts/interaction-crutch.lua",
     "color": "#38bdf8",
-    "command": "/interact"
+    "command": "/interact",
+    "image": ""
   },
   {
     "id": "altbybutton",
@@ -2134,7 +2310,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/altbutton.lua",
     "local_url": "./scripts/altbybutton.lua",
     "color": "#10b981",
-    "command": "/altbybut"
+    "command": "/altbybut",
+    "image": ""
   },
   {
     "id": "new-buttons",
@@ -2146,7 +2323,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Buttons.lua",
     "local_url": "./scripts/new-buttons.lua",
     "color": "#10b981",
-    "command": "/new-butt"
+    "command": "/new-butt",
+    "image": ""
   },
   {
     "id": "autolomka",
@@ -2158,7 +2336,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/AutoLomka%20by%20VRush.lua",
     "local_url": "./scripts/autolomka.lua",
     "color": "#38bdf8",
-    "command": "/autolomk"
+    "command": "/autolomk",
+    "image": ""
   },
   {
     "id": "auto-drugs",
@@ -2170,7 +2349,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/autodrugs.lua",
     "local_url": "./scripts/auto-drugs.lua",
     "color": "#38bdf8",
-    "command": "/auto-dru"
+    "command": "/auto-dru",
+    "image": ""
   },
   {
     "id": "auto-accent",
@@ -2182,7 +2362,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/accent.lua",
     "local_url": "./scripts/auto-accent.lua",
     "color": "#38bdf8",
-    "command": "/auto-acc"
+    "command": "/auto-acc",
+    "image": ""
   },
   {
     "id": "lesopilka-helper",
@@ -2194,7 +2375,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/LesopilkaHelper.lua",
     "local_url": "./scripts/lesopilka-helper.lua",
     "color": "#38bdf8",
-    "command": "/lesopilk"
+    "command": "/lesopilk",
+    "image": ""
   },
   {
     "id": "rp-talk",
@@ -2206,7 +2388,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/rptalk.lua",
     "local_url": "./scripts/rp-talk.lua",
     "color": "#38bdf8",
-    "command": "/rp-talk"
+    "command": "/rp-talk",
+    "image": ""
   },
   {
     "id": "producthelper",
@@ -2218,7 +2401,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/producthelper.lua",
     "local_url": "./scripts/producthelper.lua",
     "color": "#38bdf8",
-    "command": "/producth"
+    "command": "/producth",
+    "image": ""
   },
   {
     "id": "fastbuttons-upd",
@@ -2230,7 +2414,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/FastAction.lua",
     "local_url": "./scripts/fastbuttons-upd.lua",
     "color": "#10b981",
-    "command": "/fastbutt"
+    "command": "/fastbutt",
+    "image": ""
   },
   {
     "id": "browserwatcher",
@@ -2242,7 +2427,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/Browser.lua",
     "local_url": "./scripts/browserwatcher.lua",
     "color": "#38bdf8",
-    "command": "/browserw"
+    "command": "/browserw",
+    "image": ""
   },
   {
     "id": "joystickconnecter",
@@ -2254,7 +2440,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/69b82b214196c_PadBindings.lua",
     "local_url": "./scripts/joystickconnecter.lua",
     "color": "#38bdf8",
-    "command": "/joystick"
+    "command": "/joystick",
+    "image": ""
   },
   {
     "id": "fishhelper",
@@ -2266,7 +2453,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/fishhelper.lua",
     "local_url": "./scripts/fishhelper.lua",
     "color": "#38bdf8",
-    "command": "/fishhelp"
+    "command": "/fishhelp",
+    "image": "./images/fishhelper.jpg"
   },
   {
     "id": "producthelper-2",
@@ -2278,7 +2466,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/ProductHelper.lua",
     "local_url": "./scripts/producthelper-2.lua",
     "color": "#38bdf8",
-    "command": "/producth"
+    "command": "/producth",
+    "image": "./images/producthelper-2.png"
   },
   {
     "id": "sudoku-game",
@@ -2290,7 +2479,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/sudokumimgui.lua",
     "local_url": "./scripts/sudoku-game.lua",
     "color": "#38bdf8",
-    "command": "/sudoku-g"
+    "command": "/sudoku-g",
+    "image": "./images/sudoku-game.png"
   },
   {
     "id": "second-hand-helper",
@@ -2302,6 +2492,7 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/lua4fun/user-uploads/files/SCHelper.lua",
     "local_url": "./scripts/second-hand-helper.lua",
     "color": "#38bdf8",
-    "command": "/second-h"
+    "command": "/second-h",
+    "image": "./images/second-hand-helper.png"
   }
 ]

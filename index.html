@@ -1,81 +1,280 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AZ Verified Scripts</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>AZ Scripts - Каталог Lua-скриптов для Arizona RP Mobile</title>
+    <meta name="description" content="Каталог проверенных Lua-скриптов для Arizona RP Mobile (MonetLoader). Быстрая установка в папку игры в один клик, оптимизация FPS, хелперы и бинды." />
+    
+    <!-- Theme Color для панели навигации и StatusBar -->
+    <meta name="theme-color" content="#090d16" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <div id="toast-container"></div>
+    <!-- Google Fonts: Outfit & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <header class="header">
-        <div class="logo" id="page-title">
-            <span>🛡️</span> Каталог
-        </div>
-    </header>
-
-    <div id="view-catalog" class="view active-view">
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Поиск проверенных скриптов..." class="search-input">
-        </div>
-
-        <div class="tags-scroll" id="category-filters">
-            <span class="tag active" data-category="all">Все</span>
-            <span class="tag" data-category="Хелперы">Хелперы</span>
-            <span class="tag" data-category="Оптимизация">Оптимизация</span>
-            <span class="tag" data-category="Бинды">Бинды</span>
-        </div>
-
-        <main class="script-list" id="script-list"></main>
-    </div>
-
-    <div id="view-favorites" class="view">
-        <main class="script-list" id="favorites-list"></main>
-    </div>
-
-    <div id="view-settings" class="view">
-        <div class="settings-card">
-            <h2>Настройки</h2>
-            <p>Если приложение перестало устанавливать скрипты, сбросьте путь к папке игры.</p>
-            <button id="reset-folder-btn" class="install-btn" style="width: 100%; margin-top: 15px;">Сбросить папку игры</button>
-        </div>
-    </div>
-
-    <!-- МОДАЛЬНОЕ ОКНО СКРИПТА -->
-    <div id="script-modal" class="modal-overlay">
-        <div class="modal-content">
-            <button class="modal-close" id="close-modal">✖</button>
-            <div class="modal-image" id="modal-image"></div>
-            <div class="modal-body">
-                <h2 id="modal-title">Название</h2>
-                <p class="modal-author">Автор: <span id="modal-author">Автор</span></p>
-                <p id="modal-description" class="modal-description">Описание...</p>
-                <div class="modal-footer">
-                    <span class="loader-type" id="modal-loader">MonetLoader</span>
-                    <button class="install-btn" id="modal-install-btn">Установить</button>
-                </div>
+    <!-- Pure Vanilla Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Главный контейнер (Ограничен 480px по центру для эффекта телефона на ПК) -->
+    <div class="app-viewport">
+      
+      <!-- Верхний Sticky App Bar -->
+      <header class="top-bar">
+        <div class="brand-row">
+          <a href="#" class="brand-identity" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">
+            <div class="brand-icon-box">AZ</div>
+            <div class="brand-text">
+              <h1>AZ Scripts</h1>
+              <span>Arizona RP <b>Mobile</b></span>
             </div>
+          <a href="./admin-panel/index.html" class="brand-admin-btn" title="Открыть панель администратора" style="margin-left: auto; display: inline-flex; align-items: center; gap: 5px; padding: 6px 11px; border-radius: 12px; background: rgba(255, 106, 61, 0.14); border: 1px solid rgba(255, 106, 61, 0.35); color: #ff8c42; font-size: 0.74rem; font-weight: 600; text-decoration: none; transition: background 0.2s;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+              <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <span>Админка</span>
+          </a>
         </div>
+
+        <!-- Поисковая строка -->
+        <div class="search-wrapper">
+          <span class="search-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input 
+            type="text" 
+            class="search-input" 
+            id="search-input" 
+            placeholder="Поиск по названию, автору или /команде..." 
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button class="search-clear" id="search-clear" aria-label="Очистить поиск">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Фильтры по категориям (горизонтальный скролл) -->
+        <div class="categories-scroller" id="category-chips">
+          <button class="filter-chip active" data-category="all">
+            <span>Все</span>
+            <span class="chip-count"></span>
+          </button>
+          <button class="filter-chip" data-category="Оптимизация">
+            <span>⚡ Оптимизация</span>
+            <span class="chip-count"></span>
+          </button>
+          <button class="filter-chip" data-category="Хелперы">
+            <span>🛡️ Хелперы</span>
+            <span class="chip-count"></span>
+          </button>
+          <button class="filter-chip" data-category="Бинды">
+            <span>🎮 Бинды</span>
+            <span class="chip-count"></span>
+          </button>
+          <button class="filter-chip" data-category="Чат">
+            <span>💬 Чат</span>
+            <span class="chip-count"></span>
+          </button>
+          <button class="filter-chip" data-category="fav">
+            <span>⭐ Избранное</span>
+            <span class="chip-count"></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Информационная полоса количества и сортировки -->
+      <div class="meta-summary-bar">
+        <span id="total-count">Загрузка каталога...</span>
+        <div class="sort-select-wrapper">
+          <label for="sort-select" style="font-size:0.75rem; color:var(--text-subtle);">Сортировка:</label>
+          <select id="sort-select" class="sort-select">
+            <option value="popular">По рейтингу</option>
+            <option value="new">Свежие</option>
+            <option value="name">По названию</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Основная лента скриптов -->
+      <main class="scripts-feed" id="scripts-feed">
+        <!-- Генерируется через app.js -->
+      </main>
+
+      <!-- Bottom Sheet: Модальное окно скрипта (Описание, Рейтинг, Комментарии) -->
+      <div class="modal-backdrop" id="detail-modal" aria-hidden="true" role="dialog">
+        <div class="bottom-sheet">
+          <div class="sheet-drag-handle" id="detail-drag-handle">
+            <div class="sheet-drag-bar"></div>
+          </div>
+          
+          <div style="position: absolute; top: 12px; right: 14px; z-index: 10;">
+            <button id="detail-close-btn" class="search-clear" style="display: flex; background: rgba(0,0,0,0.5); padding: 8px;" aria-label="Закрыть">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="sheet-scroll-body" id="detail-body">
+            <!-- Заполняется динамически через app.js -->
+          </div>
+
+          <div class="sheet-actions-footer" id="detail-actions-footer">
+            <!-- Кнопки Избранное + Установить -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно настроек MonetLoader / Папки игры -->
+      <div class="modal-backdrop" id="settings-modal" aria-hidden="true" role="dialog">
+        <div class="bottom-sheet">
+          <div class="sheet-drag-handle">
+            <div class="sheet-drag-bar"></div>
+          </div>
+          
+          <div style="position: absolute; top: 12px; right: 14px; z-index: 10;">
+            <button id="settings-close-btn" class="search-clear" style="display: flex; background: rgba(0,0,0,0.5); padding: 8px;" aria-label="Закрыть">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="sheet-scroll-body">
+            <div class="modal-header-hero" style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);">
+              <h2 class="modal-title">Папка MonetLoader</h2>
+              <p style="font-size: 0.82rem; color: #94a3b8;">
+                Установка скриптов прямо в папку игры на Android через плагин <code>ScopedStorage</code>.
+              </p>
+            </div>
+
+            <div class="info-card-box">
+              <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:600;">Текущий статус папки:</span>
+              <p id="folder-status-text" style="font-size:0.84rem; font-weight:600; color:var(--text-main); margin-top:2px;">
+                Проверка статуса...
+              </p>
+              <button class="btn-rate" id="reset-folder-btn" style="margin-top: 8px; width: 100%; height: 38px; font-size: 0.8rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                  <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                  <path d="M16 21h5v-5"></path>
+                </svg>
+                <span>Сменить / сбросить папку игры</span>
+              </button>
+            </div>
+
+            <div class="info-card-box">
+              <h4 style="font-size: 0.86rem; color: #fff; margin-bottom: 4px;">Как работает установка в APK?</h4>
+              <p style="font-size: 0.78rem; color: #94a3b8; line-height: 1.5;">
+                При первой установке плагин <code>@daniele-rolli/capacitor-scoped-storage</code> вызывает нативный системный проводник Android (SAF). Выберите папку <code>monetloader</code> в директории игры Arizona RP, и все последующие скрипты будут скачиваться туда автоматически в один клик.
+              </p>
+            </div>
+
+            <div class="info-card-box">
+              <h4 style="font-size: 0.86rem; color: #fff; margin-bottom: 4px;">Если вы открыли через браузер:</h4>
+              <p style="font-size: 0.78rem; color: #94a3b8; line-height: 1.5;">
+                Файл <code>.lua</code> скачивается в папку «Загрузки». Затем его можно переместить в папку <code>Android/data/com.arizona.game/files/monetloader/</code> через любой удобный проводник (ZArchiver).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно онбординга (Первый запуск) -->
+      <div class="modal-backdrop" id="onboarding-modal" aria-hidden="true" role="dialog">
+        <div class="bottom-sheet onboarding-sheet">
+          <div class="sheet-drag-handle">
+            <div class="sheet-drag-bar"></div>
+          </div>
+          
+          <div class="sheet-scroll-body" style="text-align: center; align-items: center; padding: 16px 20px 28px 20px; gap: 14px;">
+            <div class="onboarding-icon-box">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+
+            <h2 style="font-size: 1.25rem; font-weight: 800; color: #fff;">Добро пожаловать в AZ Scripts!</h2>
+            
+            <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.55; max-width: 360px;">
+              Для установки скриптов в 1 клик, разрешите доступ к папке <b style="color:var(--accent-az);">monetloader</b>.
+            </p>
+
+            <div class="onboarding-hint-card">
+              <span style="font-size:0.72rem; color:var(--accent-cyan); font-weight:700; text-transform:uppercase;">Подсказка по папке игры:</span>
+              <p style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">
+                Обычно путь: <code>Android/media/com.arizona.game/monetloader</code>
+              </p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; width: 100%; gap: 10px; margin-top: 6px;">
+              <button class="btn-install-primary" id="onboarding-pick-folder-btn" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Выбрать папку игры</span>
+              </button>
+              
+              <button class="btn-skip-onboarding" id="onboarding-skip-btn">
+                Настроить позже
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Нижняя панель навигации (480px, управление одной рукой) -->
+      <nav class="bottom-nav" id="bottom-nav">
+        <button class="nav-tab-btn active" data-nav="catalog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+          </svg>
+          <span>Каталог</span>
+        </button>
+
+
+        <button class="nav-tab-btn" data-nav="favs">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span>Избранное</span>
+          <span class="nav-tab-badge" id="fav-nav-badge" style="display: none;">0</span>
+        </button>
+
+        <button class="nav-tab-btn" data-nav="guide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span>Папка игры</span>
+        </button>
+      </nav>
+
+      <!-- Контейнер всплывающих уведомлений (Toast) -->
+      <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
     </div>
 
-    <nav class="bottom-nav">
-        <a href="#" class="nav-item active" data-target="view-catalog">
-            <span class="nav-icon">📁</span>
-            <span class="nav-text">Каталог</span>
-        </a>
-        <a href="#" class="nav-item" data-target="view-favorites">
-            <span class="nav-icon">❤️</span>
-            <span class="nav-text">Избранное</span>
-        </a>
-        <a href="#" class="nav-item" data-target="view-settings">
-            <span class="nav-icon">⚙️</span>
-            <span class="nav-text">Настройки</span>
-        </a>
-    </nav>
-
-    <script type="module" src="app.js"></script>
-</body>
+    <!-- Чистый Vanilla ES6 JavaScript (Zero dependencies) -->
+    <script type="module" src="./app.js"></script>
+  </body>
 </html>
