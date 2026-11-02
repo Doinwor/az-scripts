@@ -584,7 +584,8 @@
     "local_url": "./scripts/handling-editor.lua",
     "color": "#38bdf8",
     "command": "/handling",
-    "image": "./images/handling-editor.jpg"
+    "image": "./images/handling-editor.jpg",
+    "hidden": true
   },
   {
     "id": "hudmoneyfix",
