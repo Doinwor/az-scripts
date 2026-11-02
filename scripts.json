@@ -486,7 +486,8 @@
     "local_url": "./scripts/mushroom-render.lua",
     "color": "#38bdf8",
     "command": "/mushroom",
-    "image": "./images/mushroom-render.jpg"
+    "image": "./images/mushroom-render.jpg",
+    "hidden": true
   },
   {
     "id": "payday-notifier-napominanie-o-payday",
