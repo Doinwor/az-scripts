@@ -290,7 +290,8 @@
     "local_url": "./scripts/avtoprohozhdenie-mini-igry-na-lesopilke-dvk.lua",
     "color": "#38bdf8",
     "command": "/avtoproh",
-    "image": "./images/avtoprohozhdenie-mini-igry-na-lesopilke-dvk.jpg"
+    "image": "./images/avtoprohozhdenie-mini-igry-na-lesopilke-dvk.jpg",
+    "hidden": true
   },
   {
     "id": "tsr-bot-bot-na-tsr",
