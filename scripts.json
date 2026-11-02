@@ -304,7 +304,8 @@
     "local_url": "./scripts/tsr-bot-bot-na-tsr.lua",
     "color": "#f43f5e",
     "command": "/tsr-bot-",
-    "image": "./images/tsr-bot-bot-na-tsr.jpg"
+    "image": "./images/tsr-bot-bot-na-tsr.jpg",
+    "hidden": true
   },
   {
     "id": "auto-maska",
