@@ -598,7 +598,8 @@
     "local_url": "./scripts/hudmoneyfix.lua",
     "color": "#38bdf8",
     "command": "/hudmoney",
-    "image": "./images/hudmoneyfix.jpg"
+    "image": "./images/hudmoneyfix.jpg",
+    "hidden": true
   },
   {
     "id": "dronecam-arizona-rodina-mobile",
