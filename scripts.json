@@ -570,7 +570,8 @@
     "local_url": "./scripts/skrytie-drift-interfeysa.lua",
     "color": "#38bdf8",
     "command": "/skrytie-",
-    "image": "./images/skrytie-drift-interfeysa.jpg"
+    "image": "./images/skrytie-drift-interfeysa.jpg",
+    "hidden": true
   },
   {
     "id": "handling-editor",
