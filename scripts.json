@@ -51,7 +51,8 @@
     "local_url": "./scripts/insuranceauto-stk-pomoschnik.lua",
     "color": "#38bdf8",
     "command": "/insuranc",
-    "image": "./images/insuranceauto-stk-pomoschnik.jpg"
+    "image": "./images/insuranceauto-stk-pomoschnik.jpg",
+    "hidden": true
   },
   {
     "id": "rhl2-0-helper-dlya-lovli",
