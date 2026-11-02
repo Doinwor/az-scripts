@@ -248,7 +248,8 @@
     "local_url": "./scripts/ghetto-mini-helper.lua",
     "color": "#38bdf8",
     "command": "/ghetto-m",
-    "image": "./images/ghetto-mini-helper.jpg"
+    "image": "./images/ghetto-mini-helper.jpg",
+    "hidden": true
   },
   {
     "id": "RodinaOptimizer",
