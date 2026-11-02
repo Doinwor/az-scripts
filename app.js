@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     let allScripts = [];
 
+    // Проверяем, выбрана ли уже папка игры (сохраняем в память телефона)
+    let gameFolderUri = localStorage.getItem('gameFolderUri');
+
+    // Загружаем базу данных
     fetch('scripts.json')
         .then(response => response.json())
         .then(data => {
@@ -13,6 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Ошибка загрузки базы:', error);
             scriptList.innerHTML = '<p style="color: red; text-align: center;">Ошибка загрузки базы данных.</p>';
         });
+
+    // Функция выбора папки игры
+    async function selectFolder() {
+        try {
+            const { ScopedStorage } = window.Capacitor.Plugins;
+            const result = await ScopedStorage.pickFolder();
+            if (result && result.folder) {
+                localStorage.setItem('gameFolderUri', result.folder.id);
+                gameFolderUri = result.folder.id;
+                alert('Папка игры успешно выбрана!');
+            }
+        } catch (e) {
+            console.error('Ошибка выбора папки:', e);
+            alert('Не удалось выбрать папку.');
+        }
+    }
 
     function renderScripts(scripts) {
         scriptList.innerHTML = ''; 
@@ -48,6 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelectorAll('.install-btn').forEach(btn => {
             btn.addEventListener('click', async (e) => {
+                // Если папка не выбрана, просим выбрать
+                if (!gameFolderUri) {
+                    await selectFolder();
+                    if (!gameFolderUri) {
+                        alert('Без выбора папки игры установка невозможна!');
+                        return;
+                    }
+                }
+
                 const url = e.target.getAttribute('data-url');
                 const name = e.target.getAttribute('data-id');
                 
@@ -55,37 +84,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.target.disabled = true;
 
                 try {
+                    // Скачиваем файл по ссылке с GitHub
                     const response = await fetch(url);
                     const blob = await response.blob();
                     
-                    // Проверка: если мы в приложении (APK)
                     if (window.Capacitor) {
-                        const { Filesystem, Directory } = window.Capacitor.Plugins;
-                        
+                        const { ScopedStorage } = window.Capacitor.Plugins;
                         const reader = new FileReader();
+                        
                         reader.readAsDataURL(blob);
                         reader.onloadend = async () => {
-                            const base64data = reader.result.split(',')[1];
-                            await Filesystem.writeFile({
-                                path: `${name}.lua`,
-                                data: base64data,
-                                directory: Directory.Documents
-                            });
-                            alert(`Файл ${name}.lua скачан в папку Documents!`);
-                            e.target.innerText = 'Установить';
-                            e.target.disabled = false;
+                            try {
+                                const base64data = reader.result.split(',')[1];
+                                
+                                // Сохраняем прямо в выбранную папку monetloader
+                                await ScopedStorage.writeFile({
+                                    folder: gameFolderUri,
+                                    path: `${name}.lua`,
+                                    data: base64data
+                                });
+
+                                alert(`Файл ${name}.lua успешно установлен в игру!`);
+                            } catch (err) {
+                                console.error('Ошибка записи файла:', err);
+                                alert('Ошибка записи файла в папку игры.');
+                            } finally {
+                                e.target.innerText = 'Установить';
+                                e.target.disabled = false;
+                            }
                         };
-                    } else {
-                        // Если открыто в обычном браузере
-                        const a = document.createElement('a');
-                        a.href = URL.createObjectURL(blob);
-                        a.download = `${name}.lua`;
-                        a.click();
-                        e.target.innerText = 'Установить';
-                        e.target.disabled = false;
                     }
                 } catch (error) {
-                    console.error('Ошибка:', error);
+                    console.error('Ошибка сети:', error);
                     alert('Ошибка скачивания. Проверь интернет.');
                     e.target.innerText = 'Установить';
                     e.target.disabled = false;
