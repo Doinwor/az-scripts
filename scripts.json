@@ -122,7 +122,8 @@
     "local_url": "./scripts/crafthelper.lua",
     "color": "#38bdf8",
     "command": "/crafthel",
-    "image": "./images/crafthelper.jpg"
+    "image": "./images/crafthelper.jpg",
+    "hidden": true
   },
   {
     "id": "dillbot",
