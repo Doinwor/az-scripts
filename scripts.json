@@ -7,7 +7,7 @@
     "loader": "MonetLoader",
     "version": "1.2.0",
     "description": "Убирает ограничение в 60 fps на мобильной версии.",
-    "download_url": "./scripts/unlock_fps.lua",
+    "download_url": "https://doinwor.github.io/az-scripts/scripts/unlock_fps.lua",
     "color": "linear-gradient(135deg, #1e130c, #9a8478)"
   },
   {
@@ -18,7 +18,7 @@
     "loader": "NeoMLoader",
     "version": "2.0.1",
     "description": "Удобный биндер для быстрого ввода команд.",
-    "download_url": "./scripts/binder.lua",
+    "download_url": "https://doinwor.github.io/az-scripts/scripts/binder.lua",
     "color": "linear-gradient(135deg, #2b1055, #7597de)"
   }
 ]
