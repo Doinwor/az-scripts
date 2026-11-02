@@ -206,7 +206,8 @@
     "local_url": "./scripts/avto-lovlya-obyavleniy.lua",
     "color": "#f43f5e",
     "command": "/avto-lov",
-    "image": "./images/avto-lovlya-obyavleniy.jpg"
+    "image": "./images/avto-lovlya-obyavleniy.jpg",
+    "hidden": true
   },
   {
     "id": "klaviatura",
