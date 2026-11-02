@@ -472,7 +472,8 @@
     "local_url": "./scripts/arizona-mobile-stream-chat-modded-v1-5.lua",
     "color": "#38bdf8",
     "command": "/arizona-",
-    "image": "./images/arizona-mobile-stream-chat-modded-v1-5.jpg"
+    "image": "./images/arizona-mobile-stream-chat-modded-v1-5.jpg",
+    "hidden": true
   },
   {
     "id": "mushroom-render",
