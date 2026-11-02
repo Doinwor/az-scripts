@@ -9,7 +9,8 @@
     "download_url": "https://app.arzmod.com/_app-backend/uploads/1/47bdc099dbf86ec6eee6f38663c875b47b995bf1389fb0fd7542843448b114d8.lua",
     "local_url": "./scripts/x32-unlock-60-fps.lua",
     "color": "#ff6a3d",
-    "command": "/x32-unlo"
+    "command": "/x32-unlo",
+    "hidden": true
   },
   {
     "id": "arizona-helper",
