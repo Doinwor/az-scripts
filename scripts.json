@@ -556,7 +556,8 @@
     "local_url": "./scripts/vconline.lua",
     "color": "#38bdf8",
     "command": "/vconline",
-    "image": "./images/vconline.jpg"
+    "image": "./images/vconline.jpg",
+    "hidden": true
   },
   {
     "id": "skrytie-drift-interfeysa",
